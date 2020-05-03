@@ -1,0 +1,110 @@
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+     :root {
+        --primary-color: whitesmoke;
+        --secondary-color: #BDBDAC;
+        --accent1-color: #DB4C40;
+        --accent2-color: #89BD9E;
+        --heading-font: 'Dancing Script';
+        --paragraph-font: 'Open Sans'
+    }
+    
+    html {
+        background-color: var(--primary-color)
+    }
+    
+    body {
+        padding: 1em;
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: var(--primary-color)
+    }
+    
+    img {
+        max-width: 100%
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--heading-font);
+        color: var(--accent1-color)
+    }
+    
+    header {
+        padding: 1em;
+        text-align: center;
+        color: var(--accent2-color);
+        background-color: var(--primary-color)
+    }
+    
+    header>h1 {
+        color: #89BD9E
+    }
+    
+    p {
+        font-family: var(--paragraph-font);
+        color: #89BD9E;
+        padding: 1em
+    }
+    
+    .colors {
+        width: 100%;
+        min-width: 350px;
+        margin: auto;
+        text-align: center
+    }
+    
+    .colors th {
+        background-color: #999
+    }
+    
+    .colors td {
+        width: 25%;
+        height: 3em
+    }
+    
+    .primary {
+        background-color: var(--primary-color)
+    }
+    
+    .secondary {
+        background-color: var(--secondary-color)
+    }
+    
+    .accent1 {
+        background-color: var(--accent1-color)
+    }
+    
+    .accent2 {
+        background-color: var(--accent2-color)
+    }
+    
+    nav {
+        background-color: #8F8787;
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em
+    }
+    
+    nav>ul {
+        list-style-type: none;
+        display: flex
+    }
+    
+    nav a {
+        padding: 1em;
+        min-width: 70px
+    }
+    
+    nav a:link,
+    nav a:visited {
+        color: #DB4C40
+    }
+    
+    nav a:hover {
+        color: #DB4C40;
+        background-color: whitesmoke
+    }
