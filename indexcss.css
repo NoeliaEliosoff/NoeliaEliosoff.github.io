@@ -6,7 +6,7 @@ header {
 }
 
 main {
-    font-size: 16px;
+    font-size: 20px;
     font-family: sans-serif;
     color: rgb(41, 146, 172);
     background-color: #eee;
@@ -22,4 +22,11 @@ footer {
     font-size: small;
     font-family: sans-serif;
     color: rgb(190, 24, 168);
+    margin-top: 18px;
+}
+
+.weeks-list {
+    font-size: 18px;
+    padding: 5px;
+    background-color: pink;
 }
