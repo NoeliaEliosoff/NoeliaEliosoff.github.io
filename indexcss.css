@@ -1,6 +1,7 @@
 header {
     font-size: 1.5em;
     font-family: sans-serif;
+    text-align: center;
     color: rgb(190, 24, 168);
     background-color: #eee;
 }
@@ -28,5 +29,6 @@ footer {
 .weeks-list {
     font-size: 18px;
     padding: 5px;
-    background-color: pink;
+    background-color: rgba(153, 152, 152, 0.692);
+    box-sizing: border-box;
 }
