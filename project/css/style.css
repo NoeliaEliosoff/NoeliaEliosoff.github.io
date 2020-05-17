@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: #BDBDAC;
+}
+
+h1 {
+    font-family: 'Dancing Script';
+    color: #db4c40
+}
+
+h2 {
+    font-family: 'Dancing Script';
+    color: #89BD9E
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: 'Open Sans';
+    color: #8F8787;
+}
+
+footer {
+    font-family: 'Open Sans';
+    font-size: .7em;
+    color: #A3A38B;
+    margin-top: 18px;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: #DB4C40
+}
+
+nav a:hover {
+    color: #DB4C40;
+    background-color: whitesmoke
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.important {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact {
+    margin-right: 16px
+}
+
+.navigation {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #89BD9E;
+}
