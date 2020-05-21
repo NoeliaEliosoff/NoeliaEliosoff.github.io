@@ -1,19 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+html {
+    background-color: #BDBDAC;
+}
+
 body {
     background-color: whitesmoke;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 60px #db4c40;
 }
 
 header {
     background-color: #BDBDAC;
+    display: flex;
+    align-items: center;
+    border-radius: .20rem;
+    justify-content: center;
+    padding: 5px;
+}
+
+header>img {
+    width: 90px;
+    height: auto;
+    padding: .25rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: right;
+}
+
+header nav ul li a {
+    color: #BDBDAC;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Open Sans", Arial, sans-serif;
+    display: block;
+    padding: .25rem;
 }
 
 h1 {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
     color: #db4c40
 }
 
 h2 {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
     color: #89BD9E
 }
 
@@ -22,25 +56,16 @@ img {
 }
 
 p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans", Arial, sans-serif;
     color: #8F8787;
+    line-height: 1.75rem;
 }
 
 footer {
-    font-family: 'Open Sans';
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: .7em;
     color: #A3A38B;
     margin-top: 18px;
-}
-
-nav>ul {
-    list-style-type: none;
-    display: flex
-}
-
-nav a {
-    padding: 1em;
-    min-width: 70px
 }
 
 nav a:link,
@@ -53,6 +78,7 @@ nav a:hover {
     background-color: whitesmoke
 }
 
+body,
 header,
 main,
 footer {
@@ -71,6 +97,7 @@ footer {
 
 .navigation {
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 15px;
     color: #89BD9E;
+    padding: .25rem;
 }
