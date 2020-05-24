@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
 html {
-    background-color: #BDBDAC;
+    background-color: #89BD9E;
 }
 
 body {
     background-color: whitesmoke;
-    padding: 20px;
     margin: 0;
     box-shadow: 60px #db4c40;
+    font-size: 16px;
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     align-items: center;
     border-radius: .20rem;
     justify-content: center;
+    width: 980px;
     padding: 5px;
 }
 
@@ -41,6 +42,11 @@ header nav ul li a {
     padding: .25rem;
 }
 
+main {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 h1 {
     font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
     color: #db4c40
@@ -63,9 +69,13 @@ p {
 
 footer {
     font-family: "Open Sans", Arial, sans-serif;
-    font-size: .7em;
+    font-size: .8rem;
     color: #A3A38B;
-    margin-top: 18px;
+    background-color: #BDBDAC;
+    border-radius: .20rem;
+    width: 980px;
+    height: auto;
+    position: relative;
 }
 
 nav a:link,
@@ -79,7 +89,6 @@ nav a:hover {
 }
 
 body,
-header,
 main,
 footer {
     max-width: 960px;
@@ -91,13 +100,37 @@ footer {
     font-size: 1.5em;
 }
 
-.contact {
-    margin-right: 16px
-}
-
 .navigation {
     font-family: 'Open Sans';
-    font-size: 15px;
+    font-size: .7rem;
     color: #89BD9E;
     padding: .25rem;
+}
+
+.social-media {
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+}
+
+.contact {
+    display: inline-block;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.social-img {
+    padding-right: 10px;
+}
+
+.contact-img {
+    padding: 0px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
