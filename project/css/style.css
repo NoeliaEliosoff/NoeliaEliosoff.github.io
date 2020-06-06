@@ -97,7 +97,8 @@
             
             @media screen and (max-width: 550px) {
                 main {
-                    padding: auto;
+                    display: block;
+                    padding: 0;
                 }
             }
             
