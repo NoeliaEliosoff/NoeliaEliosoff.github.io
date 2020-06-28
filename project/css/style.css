@@ -1,305 +1,526 @@
-            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
-            html {
-                background-color: #FFF7EB;
-            }
-            
-            body {
-                background-color: whitesmoke;
-                margin: 0;
-                font-size: 16px;
-            }
-            
-            header {
-                background-color: #E4A797;
-                display: flex;
-                border-radius: .20rem;
-                justify-content: space-around;
-                padding: 5px;
-            }
-            
-            header>div>img {
-                width: 65px;
-                height: auto;
-                align-self: flex-start;
-            }
-            
-            header>div>h1 {
-                margin: 10px;
-            }
-            
-            header>div {
-                display: flex;
-                align-items: flex-start;
-                justify-items: self-start;
-            }
-            
-            header nav ul {
-                display: flex;
-                align-items: flex-end;
-                list-style: none;
-            }
-            
-            header nav ul li a {
-                color: #D9836D;
-                text-decoration: none;
-                font-size: 1rem;
-                font-family: "Open Sans", Arial, sans-serif;
-                display: block;
-                padding: .40rem;
-            }
-            
-            .hero {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-            }
-            
-            .hero picture {
-                grid-column: 1 / -1;
-                grid-row: 1;
-            }
-            
-            .reserve {
-                grid-column: 1 / 2;
-                grid-row: 1;
-                justify-self: flex-start;
-                align-self: center;
-                text-align: center;
-                background-color: rgba(217, 131, 109, 0.63);
-                width: 11em;
-                height: 9em;
-                border-radius: .15em;
-            }
-            
-            .reserve h3 {
-                text-align: center;
-                font-family: "Open Sans", Arial, sans-serif;
-                color: rgb(50, 58, 53);
-                font-size: 1.2rem;
-                margin-bottom: .8em;
-            }
-            
-            .reserve button {
-                line-height: 2em;
-                width: 10em;
-                background-color: rgba(146, 175, 157, 0.877);
-                font-size: 1em;
-                margin-top: 0;
-                margin-left: .1em;
-            }
-            
-            main {
-                padding-left: 120px;
-                padding-right: 120px;
-                display: grid;
-                row-gap: 1rem;
-                column-gap: 1rem;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr .5fr;
-                grid-template-areas: "s1 s1" "s2 s2" "s3 s3";
-            }
-            
-            .section1 {
-                margin-top: 25px;
-                grid-area: s1;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-            }
-            
-            .section1 div:nth-child(1) {
-                grid-column: 1 / 2;
-                justify-self: center;
-                align-self: center;
-                text-align: center;
-            }
-            
-            .section1 picture:nth-child(2) {
-                grid-column: 2 / 3;
-                align-self: center;
-                justify-self: center;
-                max-width: 100%;
-                border: 5px solid #E4A797;
-            }
-            
-            .temple1:hover {
-                box-shadow: 0 0 50px rgb(146, 175, 157);
-            }
-            
-            .section2 {
-                grid-area: s2;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-            }
-            
-            .section2 div:nth-child(1) {
-                grid-column: 2 / 3;
-                grid-row: 1;
-                justify-self: center;
-                align-self: center;
-                text-align: center;
-            }
-            
-            .section2 picture:nth-child(2) {
-                grid-column: 1 / 2;
-                grid-row: 1;
-                align-self: center;
-                justify-self: center;
-                max-width: 100%;
-                border: 5px solid #E4A797;
-                border-radius: 5px 150px;
-                box-shadow: 9px 9px 9px rgb(146, 175, 157);
-            }
-            
-            .temple2 {
-                border-radius: 5px 150px;
-            }
-            
-            .section3 {
-                grid-area: s3;
-                justify-self: center;
-                align-self: center;
-                text-align: center;
-            }
-            
-            h1 {
-                font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
-                color: #46514A;
-            }
-            
-            h2 {
-                font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
-                color: rgb(182, 102, 82);
-            }
-            
-            img {
-                max-width: 100%;
-            }
-            
-            p {
-                font-family: "Open Sans", Arial, sans-serif;
-                color: #544F4F;
-                line-height: 1.75rem;
-            }
-            
-            footer {
-                font-family: "Open Sans", Arial, sans-serif;
-                font-size: .8rem;
-                color: #000000;
-                background-color: #E4A797;
-                border-radius: .20rem;
-            }
-            
-            .information {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr;
-                grid-gap: 20px;
-            }
-            
-            .information div:nth-child(1) {
-                grid-column: 1 / 3;
-                grid-row: 1 / 2;
-                align-self: flex-start;
-                justify-self: center;
-            }
-            
-            .information div:nth-child(2) {
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-                align-self: center;
-                justify-self: right;
-            }
-            
-            .information div:nth-child(3) {
-                grid-column: 1 / -1;
-                grid-row: -1;
-                align-self: center;
-                justify-self: center;
-            }
-            
-            nav a:link,
-            nav a:visited {
-                color: #46514A;
-            }
-            
-            nav a:hover {
-                color: #D9836D;
-                background-color: whitesmoke;
-            }
-            
-            header,
-            body,
-            main,
-            footer {
-                max-width: 960px;
-                margin: 0 auto;
-            }
-            
-            .contact {
-                font-size: .9rem;
-                line-height: 1.5rem;
-                margin-left: 25px;
-                margin-top: 15px;
-            }
-            
-            .social-img {
-                padding-right: 10px;
-            }
-            
-            .contact-img {
-                padding: 0px;
-            }
-            
-            .copyright {
-                text-align: center;
-                font-size: 1rem;
-                margin-bottom: 1em;
-            }
-            
-            @media screen and (max-width: 550px) {
-                header>div>h1 {
-                    font-size: 18px;
-                    justify-self: start;
-                    align-self: center;
-                }
-                header>div>img {
-                    width: 45px;
-                    justify-self: start;
-                    align-self: center;
-                    margin-left: 5px;
-                }
-                header nav ul li a {
-                    font-size: 12px;
-                }
-                body {
-                    display: block;
-                    padding: 0;
-                }
-                main {
-                    display: block;
-                    padding: 0;
-                    margin: 0 20px;
-                }
-                .section2 picture {
-                    margin-right: 20px;
-                }
-                .section1 picture {
-                    margin-left: 20px;
-                }
-                .reserve {
-                    width: 85px;
-                    height: 70px;
-                }
-                .reserve h3 {
-                    font-size: 13px;
-                    align-self: center;
-                }
-                .reserve button {
-                    align-self: center;
-                    width: 40px;
-                    height: 20px;
-                    font-size: 7px;
-                }
-            }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+html {
+    background-color: #FFF7EB;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-size: 16px;
+    box-shadow: 0 0 50px rgba(146, 175, 157, 0.877);
+}
+
+header {
+    background-color: #E4A797;
+    display: flex;
+    border-radius: .20rem;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+header>div>img {
+    width: 65px;
+    height: auto;
+    align-self: flex-start;
+}
+
+header>div>h1 {
+    margin: 10px;
+}
+
+header>div {
+    display: flex;
+    align-items: flex-start;
+    justify-items: self-start;
+}
+
+header nav ul {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Open Sans", Arial, sans-serif;
+    display: block;
+    padding: .40rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #183923;
+}
+
+nav a:hover {
+    color: #D9836D;
+    background-color: whitesmoke;
+}
+
+header,
+body,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.hero picture {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.reserve {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    justify-self: flex-start;
+    align-self: center;
+    text-align: center;
+    background-color: rgba(217, 131, 109, 0.63);
+    width: 11em;
+    height: 9em;
+    border-radius: .15em;
+}
+
+.reserve h3 {
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: rgb(50, 58, 53);
+    font-size: 1.2rem;
+    margin-bottom: .8em;
+}
+
+.reserve button {
+    line-height: 2em;
+    width: 10em;
+    background-color: rgba(146, 175, 157, 0.877);
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: .1em;
+}
+
+main {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-areas: "s1 s1" "s2 s2" "s3 s3";
+}
+
+.section1 {
+    margin-top: 25px;
+    grid-area: s1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.section1 div:nth-child(1) {
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.section1 picture:nth-child(2) {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid #E4A797;
+}
+
+.temple1:hover {
+    box-shadow: 0 0 50px rgb(146, 175, 157);
+}
+
+.section2 {
+    grid-area: s2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.section2 div:nth-child(1) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.section2 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid #E4A797;
+    border-radius: 5px 150px;
+    box-shadow: 9px 9px 9px rgb(146, 175, 157);
+}
+
+.temple2 {
+    border-radius: 5px 150px;
+}
+
+.section3 {
+    grid-area: s3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
+    color: #46514A;
+}
+
+h2 {
+    font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
+    color: rgb(182, 102, 82);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #544F4F;
+    line-height: 1.75rem;
+}
+
+footer {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .8rem;
+    color: #183923;
+    background-color: #E4A797;
+    border-radius: .20rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.information div:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: flex-start;
+    justify-self: center;
+}
+
+.information div:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: right;
+}
+
+.information div:nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: -1;
+    align-self: center;
+    justify-self: center;
+}
+
+.contact {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.social-img {
+    padding-right: 10px;
+}
+
+.contact-img {
+    padding: 0px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 550px) {
+    header>div>h1 {
+        font-size: 18px;
+        justify-self: start;
+        align-self: center;
+    }
+    header>div>img {
+        width: 45px;
+        justify-self: start;
+        align-self: center;
+        margin-left: 5px;
+    }
+    header nav ul li a {
+        font-size: 12px;
+    }
+    body {
+        display: block;
+        padding: 0;
+    }
+    main {
+        display: block;
+        padding: 0;
+        margin: 0 20px;
+    }
+    .section2 picture {
+        margin-right: 20px;
+    }
+    .section1 picture {
+        margin-left: 20px;
+    }
+    .reserve {
+        width: 85px;
+        height: 70px;
+    }
+    .reserve h3 {
+        font-size: 13px;
+        align-self: center;
+    }
+    .reserve button {
+        align-self: center;
+        width: 40px;
+        height: 20px;
+        font-size: 7px;
+    }
+}
+
+.divImg {
+    max-width: 100%;
+}
+
+.headingA {
+    font-family: 'Dancing Script', "Lucida Sans", "Times New Roman";
+    color: rgb(182, 102, 82);
+    line-height: 2.3rem;
+}
+
+.divUlOne {
+    grid-column: 1 / 2;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #544F4F;
+    font-size: 1rem;
+    line-height: 2rem;
+    justify-self: center;
+    align-self: center;
+    text-align: start;
+}
+
+.divUlTwo {
+    grid-column: 2 / 3;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #544F4F;
+    font-size: 1rem;
+    line-height: 2rem;
+    justify-self: center;
+    align-self: center;
+    text-align: start;
+}
+
+.divInfo {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.divInfo p,
+.divInfo1 p {
+    line-height: 2.5rem;
+}
+
+.amenpic2 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 3px solid rgb(146, 175, 157);
+}
+
+.amenpic3 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 3px solid rgb(146, 175, 157);
+}
+
+.divInfo1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    border-radius: .50rem;
+    background-color: rgba(159, 192, 172, 0.219);
+    border: 5px solid #E4A797;
+    padding: 1.5rem;
+}
+
+.divInfo1 h2 {
+    outline-color: darkolivegreen;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+
+.templepic2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid #E4A797;
+    box-shadow: 9px 9px 9px rgb(146, 175, 157);
+}
+
+.cochatemple {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.gallery {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: flex-end;
+    text-align: center;
+    border: 2.5px solid #e99682;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(146, 175, 157);
+    background-color: rgba(217, 131, 109, 0.63);
+    width: 10.5em;
+    height: 4em;
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+}
+
+.gallery h3 {
+    margin-top: .1em;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: rgb(50, 58, 53);
+    font-size: 1.2rem;
+    margin-bottom: .1em;
+}
+
+.gallery button {
+    line-height: 1.5em;
+    width: 6em;
+    border: 1.5px solid #84a162;
+    border-radius: 5px;
+    background-color: rgba(146, 175, 157, 0.877);
+    font-size: 1em;
+    margin: 0;
+}
+
+form {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+    width: 550px;
+    height: 450px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: rgba(183, 211, 194, 0.877);
+    border: 1.5px solid #b93b1b;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 20px 20px 20px;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    justify-items: flex-start;
+    text-align: left;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.1em;
+    color: #9E3207;
+}
+
+input {
+    width: 230px;
+    height: auto;
+    justify-items: flex-end;
+    margin-left: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid #9E3207;
+}
+
+.button {
+    padding-left: 9em;
+    padding-top: .9em;
+}
+
+.button button {
+    line-height: 2em;
+    width: 10em;
+    background-color: rgb(183, 211, 194);
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: .1em;
+    border: 2.3px solid #9E3207;
+    border-radius: 6px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.2em;
+    color: #9E3207;
+}
+
+.formpic {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 3px solid rgb(146, 175, 157);
+}
+
+legend {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #9E3207;
+    font-size: 1em;
+}
+
+fieldset {
+    color: #9E3207;
+    border-radius: 5px;
+}
