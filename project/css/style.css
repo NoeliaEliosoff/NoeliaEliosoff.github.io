@@ -66,6 +66,14 @@ footer {
     margin: 0 auto;
 }
 
+.hero div h1 {
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: rgb(50, 58, 53);
+    font-size: 1.2rem;
+    margin-bottom: .8em
+}
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,14 +95,6 @@ footer {
     width: 11em;
     height: 9em;
     border-radius: .15em;
-}
-
-.reserve h3 {
-    text-align: center;
-    font-family: "Open Sans", Arial, sans-serif;
-    color: rgb(50, 58, 53);
-    font-size: 1.2rem;
-    margin-bottom: .8em;
 }
 
 .reserve button {
