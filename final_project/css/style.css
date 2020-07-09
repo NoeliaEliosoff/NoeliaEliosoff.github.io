@@ -1,22 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display&family=Clicker+Script&display=swap');
 :root {
     --primary-color: #F1E9E0;
     --secondary-color: #E7C24F;
     --accent1-color: #D51328;
     --accent2-color: #7188BB;
     --heading-font: "Clicker Script", cursive;
-    --paragraph-font: "Nanum Pen Script", Helvetica, sans-serif
+    --paragraph-font: 'Rancho', cursive, Helvetica, sans-serif;
 }
 
 html {
     background-color: var(--primary-color);
 }
 
+header {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    display: flex;
+    border-radius: .20rem;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header>div>img {
+    width: 65px;
+    height: auto;
+    align-self: center;
+}
+
+header>div>h1 {
+    margin: 10px;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    justify-items: self-start;
+}
+
+header nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: var(--paragraph-font);
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: .20rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    line-height: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: .20rem;
+    justify-content: right;
+    list-style: none;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent1-color);
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+    background-color: #BEC1D5;
+}
+
 body {
     max-width: 900px;
-    margin: 0 auto;
-    background-color: white;
     padding: 1em;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    font-size: 16px;
+    box-shadow: 0 0 50px #7188bbd0;
+}
+
+header,
+body,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 img {
@@ -47,13 +120,6 @@ h4 {
     color: var(--accent2-color);
 }
 
-header {
-    padding: 1em;
-    text-align: center;
-    color: var(--accent2-color);
-    background-color: var(--primary-color);
-}
-
 header>h1 {
     color: var(--accent2-color);
 }
@@ -65,9 +131,168 @@ p {
     font-size: 1.2em;
 }
 
-footer {
+.section1 div:nth-child(1) p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
+    padding: .5em;
+    font-size: 1.5em;
+}
+
+.section2 div:nth-child(1) p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    padding: .5em;
+    font-size: 1.5em;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "s1 s2 s3" "s1 s2 s3" "s1 s2 s3";
+}
+
+.section1 {
+    grid-area: s1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section1 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.section1 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 9px 9px 9px rgb(146, 175, 157);
+}
+
+.section2 {
+    grid-area: s2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section2 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.section2 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 9px 9px 9px rgb(146, 175, 157);
+}
+
+.roundcorner {
+    border-radius: 5px 50px;
+}
+
+.section3 {
+    grid-area: s3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.section3 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.section3 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 9px 9px 9px rgb(146, 175, 157);
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    font-size: .9rem;
+    background-color: var(--primary-color);
+    border-radius: .20rem;
+}
+
+.history {
+    align-self: center;
+    justify-self: center;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.information div:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    padding-top: .9rem;
+}
+
+.information div:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: right;
+}
+
+.information div:nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: -1;
+    align-self: center;
+    justify-self: center;
+}
+
+.social-img {
+    padding-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1em;
 }
 
 .colors {
@@ -100,32 +325,4 @@ footer {
 
 .accent2 {
     background-color: var(--accent2-color)
-}
-
-nav {
-    background-color: var(--secondary-color);
-    font-family: var(--paragraph-font);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-nav>ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav a {
-    padding: 1em;
-    min-width: 70px;
-}
-
-nav a:link,
-nav a:visited {
-    color: var(--accent1-color);
-}
-
-nav a:hover {
-    color: var(--accent1-color);
-    background-color: #BEC1D5;
 }
