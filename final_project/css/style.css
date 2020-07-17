@@ -432,3 +432,35 @@ button {
     margin-left: 43em;
     margin-bottom: 2em;
 }
+
+@media screen and (max-width: 550px) {
+    header>div>h1 {
+        font-size: 18px;
+        justify-self: start;
+        align-self: center;
+    }
+    header>div>img {
+        width: 45px;
+        justify-self: start;
+        align-self: center;
+        margin-left: 5px;
+    }
+    header nav ul li a {
+        font-size: 12px;
+    }
+    body {
+        display: block;
+        padding: 0;
+    }
+    main {
+        display: block;
+        padding: 0;
+        margin: 0 20px;
+    }
+    button {
+        align-self: right;
+        width: 70px;
+        height: 35px;
+        font-size: 10px;
+    }
+}
