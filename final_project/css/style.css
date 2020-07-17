@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display&family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Raleway&family=Rancho&display=swap');
 :root {
     --primary-color: #F1E9E0;
     --secondary-color: #E7C24F;
     --accent1-color: #D51328;
     --accent2-color: #7188BB;
-    --heading-font: "Clicker Script", cursive;
-    --paragraph-font: 'Rancho', cursive, Helvetica, sans-serif;
+    --heading-font: 'Rancho', cursive, sans-serif;
+    --header-font: "Clicker Script", cursive;
+    --paragraph-font: 'Raleway', Helvetica, sans-serif;
 }
 
 html {
@@ -47,7 +48,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     font-size: 1.4rem;
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -56,7 +57,7 @@ header nav ul li a {
 
 nav {
     background-color: var(--secondary-color);
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     line-height: 1em;
     text-align: center;
     font-size: 1.2em;
@@ -112,7 +113,11 @@ h4 {
     font-size: 1.25em;
 }
 
-h1,
+h1 {
+    font-family: var(--header-font);
+    color: var(--accent2-color);
+}
+
 h2,
 h3,
 h4 {
@@ -128,21 +133,31 @@ p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     padding: 1em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .section1 div:nth-child(1) p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     padding: .5em;
-    font-size: 1.5em;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 .section2 div:nth-child(1) p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     padding: .5em;
-    font-size: 1.5em;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.section3 div:nth-child(1) p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    padding: .5em;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 main {
@@ -152,11 +167,12 @@ main {
     row-gap: 1.5rem;
     column-gap: 1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "s1 s2 s3" "s1 s2 s3" "s1 s2 s3";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "s1 s2 s3" "s1 s2 s3";
 }
 
 .section1 {
+    margin-right: 2em;
     grid-area: s1;
     display: grid;
     grid-template-columns: 1fr;
@@ -167,14 +183,14 @@ main {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
 }
 
 .section1 picture:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
     max-width: 100%;
     border: 5px solid var(--secondary-color);
@@ -193,14 +209,14 @@ main {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
     text-align: center;
 }
 
 .section2 picture:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
     max-width: 100%;
     border: 5px solid var(--secondary-color);
@@ -213,11 +229,11 @@ main {
 }
 
 .section3 {
+    margin-left: 2em;
     grid-area: s3;
     justify-self: center;
     align-self: center;
     text-align: center;
-    margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -227,14 +243,14 @@ main {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
 }
 
 .section3 picture:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
     max-width: 100%;
     border: 5px solid var(--secondary-color);
@@ -245,14 +261,9 @@ main {
 footer {
     font-family: var(--paragraph-font);
     color: var(--accent2-color);
-    font-size: .9rem;
+    font-size: 20px;
     background-color: var(--primary-color);
     border-radius: .20rem;
-}
-
-.history {
-    align-self: center;
-    justify-self: center;
 }
 
 .information {
@@ -267,15 +278,17 @@ footer {
     grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
-    font-size: 1rem;
+    font-size: .9rem;
     padding-top: .9rem;
+    margin-left: 3em;
+    line-height: 1.4em;
 }
 
 .information div:nth-child(2) {
-    grid-column: 3 / 4;
+    grid-column: 3 / 5;
     grid-row: 1 / 2;
     align-self: center;
-    justify-self: right;
+    justify-self: center;
 }
 
 .information div:nth-child(3) {
@@ -295,34 +308,127 @@ footer {
     margin-bottom: 1em;
 }
 
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center
+body h2 {
+    font-size: 32px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-top: 1.3em;
+    margin-bottom: 1em;
 }
 
-.colors th {
-    background-color: #999;
+.section4 {
+    grid-area: s1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
 }
 
-.colors td {
-    width: 25%;
-    height: 3em;
+.section4 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: flex-start;
+    text-align: center;
 }
 
-.primary {
+.section4 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 3px 3px 3px rgb(146, 175, 157);
+}
+
+.section5 {
+    grid-area: s2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.section5 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.section5 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 3px 3px 3px rgb(146, 175, 157);
+}
+
+.roundcorner {
+    border-radius: 5px 50px;
+}
+
+.section6 {
+    grid-area: s3;
+    justify-self: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.section6 div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.section6 picture:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    justify-self: center;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px 50px;
+    box-shadow: 3px 3px 3px rgb(146, 175, 157);
+}
+
+.section4,
+.section5,
+.section6 {
+    text-align: center;
+    line-height: 2em;
+}
+
+ul li {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+footer a {
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+button {
+    color: var(--accent2-color);
     background-color: var(--primary-color);
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-}
-
-.accent1 {
-    background-color: var(--accent1-color);
-}
-
-.accent2 {
-    background-color: var(--accent2-color)
+    font-family: var(--paragraph-font);
+    font-size: 1.1em;
+    font-weight: bolder;
+    line-height: 2em;
+    width: 10em;
+    border: 3px solid var(--secondary-color);
+    border-radius: 5px 5px;
+    margin-left: 43em;
+    margin-bottom: 2em;
 }
