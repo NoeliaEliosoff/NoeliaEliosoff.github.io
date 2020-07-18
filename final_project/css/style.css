@@ -58,11 +58,9 @@ header nav ul li a {
 nav {
     background-color: var(--secondary-color);
     font-family: var(--heading-font);
-    line-height: 1em;
     text-align: center;
     font-size: 1.2em;
     border-radius: .20rem;
-    justify-content: right;
     list-style: none;
 }
 
@@ -209,7 +207,7 @@ main {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: center;
-    align-self: flex-end;
+    align-self: flex-start;
     text-align: center;
 }
 
