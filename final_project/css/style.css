@@ -170,7 +170,7 @@ main {
 }
 
 .section1 {
-    margin-right: 2em;
+    margin-right: 1em;
     grid-area: s1;
     display: grid;
     grid-template-columns: 1fr;
@@ -188,7 +188,7 @@ main {
 .section1 picture:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: flex-end;
+    align-self: center;
     justify-self: center;
     max-width: 100%;
     border: 5px solid var(--secondary-color);
@@ -227,10 +227,10 @@ main {
 }
 
 .section3 {
-    margin-left: 2em;
+    margin-left: 1em;
     grid-area: s3;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -248,8 +248,8 @@ main {
 .section3 picture:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: flex-end;
     justify-self: center;
+    align-self: center;
     max-width: 100%;
     border: 5px solid var(--secondary-color);
     border-radius: 5px 50px;

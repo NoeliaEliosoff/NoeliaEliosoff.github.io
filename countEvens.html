@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>How many even numbers are there</title>
+
+    <script>
+        //Defining Table:
+        //Input: none.
+        //Procesing: use a function to know how many even numbers are there in a certain array.
+        //Output: Quantity of even numbers in the array.
+
+        //var list = [17, 8, 9, 5, 20];
+        //var counting = countEvens(list);
+
+        function countEvens(list) {
+
+            let count = 0;
+            for (let i = 0; i < list.length; i++) {
+                if (list[i] % 2 == 0) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        //console.log("There are " + counting + " even numbers.");
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
