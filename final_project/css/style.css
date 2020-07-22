@@ -459,7 +459,7 @@ main ul li {
         margin: 0 20px;
     }
     button {
-        align-self: right;
+        align-self: flex-end;
         width: 70px;
         height: 35px;
         font-size: 10px;
@@ -598,6 +598,13 @@ main ul li {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--header-font);
+    color: var(--accent2-color);
 }
 
 form {
