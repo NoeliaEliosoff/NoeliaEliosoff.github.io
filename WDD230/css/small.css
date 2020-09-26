@@ -3,14 +3,10 @@ html {
 }
 
 header {
-    font-family: sans-serif;
+    font-family: 'Neucha', Helvetica, cursive;
     text-align: center;
     color: rgb(190, 24, 168);
     background-color: rgba(121, 121, 121, 0.527);
-}
-
-.weeks-list {
-    text-align: left;
 }
 
 .info {
@@ -24,8 +20,8 @@ header {
 
 main {
     text-align: center;
-    font-size: 20px;
-    font-family: sans-serif;
+    font-size: 30px;
+    font-family: 'Neucha', Helvetica, cursive;
     color: rgb(41, 146, 172);
     background-color: #eee;
 }
@@ -41,7 +37,7 @@ footer {
     padding: .5em;
     text-align: center;
     font-size: medium;
-    font-family: sans-serif;
+    font-family: 'Neucha', Helvetica, cursive;
     color: rgb(190, 24, 168);
     margin-top: 18px;
     background-color: rgba(121, 121, 121, 0.527);
@@ -49,8 +45,7 @@ footer {
 
 h1 {
     font-size: 1.8rem;
-    margin: 0.15rem;
-    margin-bottom: 25px;
+    margin: 0.5rem;
 }
 
 h2 {
@@ -58,10 +53,15 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+ul li {
+    padding: .2rem;
+}
+
 .weeks-list {
     font-size: 18px;
     padding: 5px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .dateModified {
