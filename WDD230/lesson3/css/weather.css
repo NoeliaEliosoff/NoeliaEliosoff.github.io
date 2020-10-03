@@ -1,0 +1,139 @@
+                            header {
+                                color: #14213D;
+                                text-align: center;
+                                padding: .9rem;
+                                background-color: #FCA311;
+                                border-radius: 0.5rem;
+                            }
+                            
+                            body {
+                                padding: 0.6rem;
+                                margin: 0 auto;
+                                font-size: 16px;
+                                max-width: 760px;
+                            }
+                            
+                            h1,
+                            h2 {
+                                font-family: 'Fredoka One', Tahoma, cursive;
+                            }
+                            
+                            nav {
+                                background-color: #14213D;
+                                text-align: center;
+                                box-shadow: 0 2px 20px #14213D;
+                                border-radius: 0.2rem;
+                            }
+                            
+                            nav ul {
+                                justify-content: center;
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                            }
+                            
+                            nav ul li a {
+                                display: block;
+                                color: #fff;
+                                font-family: 'Raleway', sans-serif;
+                                text-align: center;
+                                padding: 0.75rem;
+                                text-decoration: none;
+                                font-size: 1.2rem;
+                            }
+                            
+                            nav a:hover {
+                                background-color: #E5E5E5;
+                                color: #000000;
+                            }
+                            
+                            .active {
+                                color: #FCA311;
+                            }
+                            
+                            main {
+                                font-size: 1.1rem;
+                                line-height: 1.6rem;
+                                background-color: #E5E5E5;
+                                color: #14213D;
+                                font-family: 'Raleway', sans-serif;
+                            }
+                            
+                            main section {
+                                margin: 0.5rem;
+                                padding: 0.5rem;
+                            }
+                            
+                            main section img {
+                                max-width: 30%;
+                            }
+                            
+                            .colors {
+                                padding: 1rem;
+                                width: 100%;
+                                margin: 0 auto;
+                                text-align: center
+                            }
+                            
+                            .colors th {
+                                background-color: #999;
+                            }
+                            
+                            .colors td {
+                                width: 25%;
+                                height: 3em;
+                            }
+                            
+                            .paragraphs {
+                                color: #fff;
+                                background-color: #14213D;
+                            }
+                            
+                            .headings {
+                                color: #fff;
+                                background-color: #14213D;
+                            }
+                            
+                            .mainBack {
+                                background-color: #E5E5E5;
+                            }
+                            
+                            .headerFooter {
+                                background-color: #FCA311;
+                            }
+                            
+                            footer {
+                                color: #14213D;
+                                text-align: center;
+                                padding: .9rem;
+                                background-color: #FCA311;
+                                font-family: 'Raleway', sans-serif;
+                                text-decoration: none;
+                                border-radius: 0.5rem;
+                            }
+                            /* Tablet Views ******************************/
+                            
+                            @media only screen and (min-width: 37.5em) {
+                                nav ul {
+                                    display: flex;
+                                }
+                                nav ul li {
+                                    flex: 1 1 100%;
+                                }
+                                nav a {
+                                    font-size: 1rem;
+                                }
+                                main {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+                            
+                            @media only screen and (min-width: 60em) {
+                                nav a {
+                                    font-size: 1.1rem;
+                                }
+                                main {
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                }
+                            }
