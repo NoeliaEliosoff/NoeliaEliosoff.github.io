@@ -1,0 +1,13 @@
+@media only screen and (min-width: 60em) {
+    nav button {
+        display: none;
+    }
+    ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    ul a {
+        text-align: center;
+    }
+}
