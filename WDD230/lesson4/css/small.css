@@ -1,11 +1,18 @@
+html {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(90deg, rgba(9, 9, 121, 0.7287289915966386) 1%, rgba(9, 9, 121, 1) 35%, rgba(255, 255, 255, 1) 100%);
+}
+
 body {
     padding: 0.6rem;
     margin: 0 auto;
     font-size: 16px;
-    max-width: 760px;
 }
 
 header {
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +42,7 @@ header picture img {
     margin-top: 0;
 }
 
-nav ul.hide {
+.hide {
     display: none;
 }
 
@@ -51,15 +58,22 @@ nav {
 }
 
 nav button {
+    margin: auto 38%;
+    padding: .6rem;
     background-color: transparent;
-    border: none;
+    border: .1rem solid #FCA311;
     color: #FCA311;
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
 }
 
+nav button:hover {
+    background-color: #fca21198;
+    color: #14213D;
+}
+
 ul {
-    padding: .5rem;
+    padding: .7rem;
     margin-top: 0;
     list-style: none;
 }
@@ -74,11 +88,13 @@ ul li a {
 }
 
 ul a:hover {
-    background-color: #E5E5E5;
-    color: #000000;
+    background-color: #fca21183;
+    color: #14213D;
 }
 
 main {
+    margin: 0 auto;
+    max-width: 760px;
     font-size: 1rem;
     background-color: #E5E5E5;
     color: #14213D;
@@ -99,6 +115,8 @@ main div {
 }
 
 footer {
+    margin: 0 auto;
+    max-width: 900px;
     color: #14213D;
     text-align: center;
     padding: .9rem;
