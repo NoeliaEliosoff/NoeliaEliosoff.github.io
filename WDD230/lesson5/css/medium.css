@@ -17,6 +17,10 @@
     .hero {
         position: relative;
     }
+    .hero img {
+        max-width: 100%;
+        width: 850px;
+    }
     .summary {
         font-size: small;
         border-radius: 1rem;
