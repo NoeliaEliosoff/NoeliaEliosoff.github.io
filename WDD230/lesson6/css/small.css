@@ -36,7 +36,7 @@
     }
     
     main .hero figure.myPic img {
-        max-width: 100%;
+        width: 100%;
     }
     
     .summary h2 {
