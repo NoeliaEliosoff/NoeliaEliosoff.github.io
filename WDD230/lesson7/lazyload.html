@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page shows an example of lazy loading images.">
+    <title> Lazy Loading Example</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+
+    <main id="lazyImg">
+        <h1>Lazy Images Gallery</h1>
+        <picture>
+            <img src="images/placeholder.jpg" data-source="images/pic1" alt="Image1">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-source="images/pic2" alt="Image2">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-source="images/pic3" alt="Image3">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-source="images/pic4" alt="Image4">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-source="images/pic5" alt="Image5">
+        </picture>
+
+    </main>
+
+    <footer>
+        <span>
+            &copy;2020 | Noelia Eliosoff | Mar del Plata, Buenos Aires, Argentina | <a
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>
+        </span>
+
+        <div id="todaysDate"></div>
+
+    </footer>
+    <script src="js/lazy.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Fredoka One', 'Raleway']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
