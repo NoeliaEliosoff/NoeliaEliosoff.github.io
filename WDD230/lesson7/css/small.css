@@ -279,14 +279,12 @@
     }
     
     #lazyImg {
-        display: grid;
-        grid-template-columns: 400px;
-        align-content: center;
-        justify-content: center;
+        max-width: 450px;
+        margin: 0 auto;
     }
     
     #lazyImg picture {
-        margin: .5rem;
+        max-width: 450px;
     }
     
     #lazyImg picture img[data-src] {
@@ -294,6 +292,7 @@
     }
     
     #lazyImg picture img {
+        max-width: 100%;
         filter: blur(0em);
         transition: filter 0.5s;
     }
