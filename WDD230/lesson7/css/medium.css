@@ -55,9 +55,8 @@
         align-self: center;
         justify-self: center;
     }
-}
-
-.gallery7 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    .gallery7 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
