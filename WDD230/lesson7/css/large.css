@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 900px) {
     nav button {
         display: none;
     }
@@ -30,4 +30,13 @@
     .summary h2 {
         padding: .3rem;
     }
+}
+
+.gallery7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery7 figure:hover {
+    box-shadow: 0 0 50px #14213D;
 }

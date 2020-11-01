@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 650px) {
     nav button {
         display: none;
     }
@@ -55,4 +55,9 @@
         align-self: center;
         justify-self: center;
     }
+}
+
+.gallery7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
