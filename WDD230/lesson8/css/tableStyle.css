@@ -29,22 +29,19 @@ th {
     text-align: center;
 }
 
-tr:nth-child(even) td {
-    background-color: #e7f0ed;
-}
-
 tr:nth-child(odd) td {
     background-color: #e7ffed;
 }
 
 td {
+    background-color: #e7f0ed;
     color: #000000;
     font-size: 1.3rem;
     padding: 10px 10px;
     text-align: center;
 }
 
-.highlight {
+#highlight {
     background-color: #628ca6;
     color: #fff;
 }
