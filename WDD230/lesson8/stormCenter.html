@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Wather Circle - Storm Report | The purpose of this page is for the user to report a storm or unusual weather event in his or her travel area.">
+    <title> Storm Report - The Weather Circle</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div id="pancakesFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. <br> Saturday at the city park pavilion.
+    </div>
+
+    <header>
+        <picture><img src="images/weatherLogo.png" alt="A logo showing different weathers and people together.">
+        </picture>
+        <section class="slogan">
+            <h1>The Weather Circle</h1>
+            <div>Stay up to date on the weather and something else.</div>
+        </section>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="preston-4.html" class="active">Preston</a></li>
+            <li><a href="sodaSprings.html"> Soda Springs</a></li>
+            <li><a href="fishHaven.html"> Fish Haven</a></li>
+            <li><a href="stormCenter.html"> Storm Center</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <h2>Any Unusual Weather to Report?</h2>
+
+        <form action="get" action="thanks.html">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[A-Za-z] {5,}"
+                        required></label>
+                <label class="top">Email* <input type="email" name="email" required
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
+                <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Data</legend>
+                <label class="top">Storm Date <input type="date" name="stormdate"></label>
+                <label class="top">Choose a storm type from the list:
+                    <input list="storms" name="myStorm" /></label>
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label class="top">Rating:
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <label class="top"> Storm Region:
+                    <select name="stormRegion">
+                        <option value="">Select Region...</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="oneida">Oneida</option>
+                        <option value="pocatello">Pocatello</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                    </select>
+                </label>
+                <div class="usDanger">User in Danger</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information | Comments</legend>
+                <label> <textarea name="textArea" cols="30" rows="10" placeholder="Write something here"></textarea> </label>
+            </fieldset>
+
+            <input type="submit" value="Report Your Weather" class="submitBtn">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <span>
+            &copy;2020 The Weather Circle | Attributions | Noelia Eliosoff
+        </span>
+
+        <div id="todaysDate"></div>
+
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Fredoka One', 'Raleway']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
