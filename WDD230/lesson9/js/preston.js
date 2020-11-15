@@ -63,62 +63,61 @@ fetch(requestURL)
     })
     .then(function(jsonObject) {
 
-            console.table(jsonObject); // temporary checking for valid response and data parsing
+        console.table(jsonObject); // temporary checking for valid response and data parsing
 
-            const towns = jsonObject['towns'];
+        const towns = jsonObject['towns'];
 
-            let div = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let yearFounded = document.createElement('p');
-            let population = document.createElement('p');
-            let annualRainFall = document.createElement('p');
+        let div = document.createElement('div');
+        let h2 = document.createElement('h2');
+        let yearFounded = document.createElement('p');
+        let population = document.createElement('p');
+        let annualRainFall = document.createElement('p');
 
-            h2.textContent = towns[2].name;
-            yearFounded.textContent = towns[2].yearFounded;
-            population.textContent = towns[2].currentPopulation;
-            annualRainFall.textContent = towns[2].averageRainfall;
+        h2.textContent = towns[2].name;
+        yearFounded.textContent = towns[2].yearFounded;
+        population.textContent = towns[2].currentPopulation;
+        annualRainFall.textContent = towns[2].averageRainfall;
 
-            div.appendChild(h2);
-            div.appendChild(yearFounded);
-            div.appendChild(population);
-            div.appendChild(annualRainFall);
+        div.appendChild(h2);
+        div.appendChild(yearFounded);
+        div.appendChild(population);
+        div.appendChild(annualRainFall);
 
-            document.querySelector('article.card').appendChild(div);
+        document.querySelector('article.card').appendChild(div);
 
-            let div = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let yearFounded = document.createElement('p');
-            let population = document.createElement('p');
-            let annualRainFall = document.createElement('p');
+        let div = document.createElement('div');
+        let h2 = document.createElement('h2');
+        let yearFounded = document.createElement('p');
+        let population = document.createElement('p');
+        let annualRainFall = document.createElement('p');
 
-            h2.textContent = towns[5].name;
-            yearFounded.textContent = towns[5].yearFounded;
-            population.textContent = towns[5].currentPopulation;
-            annualRainFall.textContent = towns[5].averageRainfall;
+        h2.textContent = towns[5].name;
+        yearFounded.textContent = towns[5].yearFounded;
+        population.textContent = towns[5].currentPopulation;
+        annualRainFall.textContent = towns[5].averageRainfall;
 
-            div.appendChild(h2);
-            div.appendChild(yearFounded);
-            div.appendChild(population);
-            div.appendChild(annualRainFall);
+        div.appendChild(h2);
+        div.appendChild(yearFounded);
+        div.appendChild(population);
+        div.appendChild(annualRainFall);
 
-            document.querySelector('article.card2').appendChild(div);
+        document.querySelector('article.card2').appendChild(div);
 
-            let div = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let yearFounded = document.createElement('p');
-            let population = document.createElement('p');
-            let annualRainFall = document.createElement('p');
+        let div = document.createElement('div');
+        let h2 = document.createElement('h2');
+        let yearFounded = document.createElement('p');
+        let population = document.createElement('p');
+        let annualRainFall = document.createElement('p');
 
-            h2.textContent = towns[6].name;
-            yearFounded.textContent = towns[6].yearFounded;
-            population.textContent = towns[6].currentPopulation;
-            annualRainFall.textContent = towns[6].averageRainfall;
+        h2.textContent = towns[6].name;
+        yearFounded.textContent = towns[6].yearFounded;
+        population.textContent = towns[6].currentPopulation;
+        annualRainFall.textContent = towns[6].averageRainfall;
 
-            div.appendChild(h2);
-            div.appendChild(yearFounded);
-            div.appendChild(population);
-            div.appendChild(annualRainFall);
+        div.appendChild(h2);
+        div.appendChild(yearFounded);
+        div.appendChild(population);
+        div.appendChild(annualRainFall);
 
-            document.querySelector('article.card3').appendChild(div);
-        }
+        document.querySelector('article.card3').appendChild(div);
     });
