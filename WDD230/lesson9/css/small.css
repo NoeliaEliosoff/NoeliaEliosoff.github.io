@@ -1,0 +1,458 @@
+    html {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 1%, rgba(20, 33, 61, 0.7315301120448179) 37%, rgba(20, 33, 61, 0.7063200280112045) 77%);
+    }
+    
+    body {
+        padding: 0.6rem;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    
+    header {
+        margin: 0 auto;
+        max-width: 1000px;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #14213D;
+        padding: .9rem;
+        background-color: #fca211e0;
+    }
+    
+    header picture img {
+        width: 90px;
+        height: auto;
+    }
+    
+    .hero {
+        position: relative;
+    }
+    
+    main .hero figure.myPic {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    main .hero figure.myPic img {
+        width: 100%;
+    }
+    
+    .summary h2 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+    
+    .summary table {
+        margin: .3rem auto;
+    }
+    
+    .summary {
+        background-color: #fca2119f;
+        font-size: larger;
+        font-weight: bold;
+        border: 2px solid #14213d8c;
+        padding: .5rem;
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+    
+    #pancakesFriday {
+        display: none;
+        background-color: #fca21146;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: bolder;
+        color: rgb(168, 14, 14);
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        border: 2px solid rgb(168, 14, 14);
+    }
+    
+    .active {
+        color: #FCA311;
+    }
+    
+    .forecast {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    
+    .forecastCol img {
+        max-width: 40%;
+        margin: .7rem auto;
+    }
+    
+    .forecastDay {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #14213D;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: #14213D;
+        color: white;
+    }
+    
+    .forecastCol {
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        background-color: #fca21191;
+        border: 2px solid #14213D;
+    }
+    
+    .forecastCol p {
+        font-weight: bolder;
+    }
+    
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    
+    .slogan h1 {
+        margin: .5rem;
+    }
+    
+    .slogan div {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 0;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Fredoka One', Tahoma, cursive;
+        padding: .5rem;
+    }
+    
+    nav {
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        max-width: 760px;
+        background-color: #14213D;
+    }
+    
+    nav button {
+        margin: auto 38%;
+        padding: .6rem;
+        background-color: transparent;
+        border: .1rem solid #FCA311;
+        color: #FCA311;
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    nav button:hover {
+        background-color: #fca21198;
+        color: #14213D;
+    }
+    
+    ul {
+        padding: .7rem;
+        margin-top: 0;
+        list-style: none;
+    }
+    
+    ul li a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    ul a:hover {
+        background-color: #fca21183;
+        color: #14213D;
+    }
+    
+    main {
+        margin: 0 auto;
+        padding: 1.5rem;
+        max-width: 850px;
+        font-size: 1rem;
+        background-color: #E5E5E5;
+        color: #14213D;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    main h2 {
+        font-size: 2rem;
+    }
+    
+    main div {
+        margin: .9rem 0;
+        text-align: left;
+        padding: 1.5rem;
+    }
+    
+    main article p {
+        padding: .6rem;
+        line-height: 2rem;
+    }
+    
+    main article img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .information div img {
+        max-width: 100%;
+    }
+    
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    .information div:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    
+    .information div:nth-child(2) {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .information div:nth-child(3) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .contact {
+        font-size: .9rem;
+        line-height: 1.5rem;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    
+    .social-img {
+        padding-right: 10px;
+    }
+    
+    .contact-img {
+        padding: 0px;
+    }
+    
+    footer {
+        margin: 0 auto;
+        max-width: 1000px;
+        color: #14213D;
+        text-align: center;
+        padding: .9rem;
+        background-color: #FCA311;
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
+    
+    #todaysDate {
+        margin: .3rem;
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    #lazyImg {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    #lazyImg picture {
+        max-width: 450px;
+    }
+    
+    #lazyImg picture img[data-src] {
+        filter: blur(0.2em);
+    }
+    
+    #lazyImg picture img {
+        max-width: 100%;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    
+    .gallery7 figure img[data-src] {
+        filter: blur(0.2em);
+    }
+    
+    .gallery7 figure img {
+        max-width: 100%;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    
+    .gallery7 figure {
+        padding: .5rem;
+        border: 1px solid #14213db4;
+    }
+    
+    .galleryH2 {
+        margin: 0 auto;
+    }
+    
+    .gallery7 figure figcaption {
+        font-size: smaller;
+        font-style: italic;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    form fieldset {
+        margin: 2rem 0;
+        border: 3px solid #FCA311;
+        border-radius: 10px;
+        padding: .5rem 2%;
+    }
+    
+    form legend {
+        color: #14213D;
+        font-weight: bolder;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    
+    form label.top {
+        display: block;
+        padding-top: 1rem;
+        color: #14213D;
+        font-size: .9rem;
+    }
+    
+    form div.usDanger {
+        color: #14213D;
+        font-size: .9rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    form label.top input,
+    form label.top select {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        max-width: 20rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    form label.sbs {
+        display: block;
+        padding: .75rem 0;
+        color: #555;
+    }
+    
+    form label.top input#rating {
+        padding: 0;
+    }
+    
+    form input.submitBtn {
+        border: none;
+        background-color: #FCA311;
+        color: #14213D;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    
+    form label.top input:required {
+        border-left: red solid 6px;
+    }
+    
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+    
+    form fieldset textarea {
+        border-radius: .3rem;
+        max-width: 20rem;
+    }
+    
+    div.thanksMsg {
+        margin: 0 auto;
+        max-width: 40rem;
+    }
+    
+    div.thanksMsg p {
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .wireframe img {
+        max-width: 100%;
+    }
+    
+    .wireframe h3 {
+        font-size: 1.7rem;
+        text-decoration: underline;
+    }
+    
+    .wireH2 {
+        background-color: #FCA311;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .homeImages .card img,
+    .homeImages .card2 img,
+    .homeImages .card3 img {
+        max-width: 100%;
+    }
+    
+    .homeImages .card div,
+    .homeImages .card2 div,
+    .homeImages .card3 div {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .homeImages .card div p,
+    .homeImages .card2 div p,
+    .homeImages .card3 div p {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: .7rem;
+    }
+    
+    .homeImages .card,
+    .homeImages .card2,
+    .homeImages .card3 {
+        max-width: 100%;
+        margin: .4rem;
+        box-shadow: 1px 1px 4px 1px #14213D;
+        border-radius: 3px;
+        background-color: #eebb69;
+    }

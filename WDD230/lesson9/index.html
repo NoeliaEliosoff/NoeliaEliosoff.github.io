@@ -41,62 +41,23 @@
     </nav>
 
     <main class="clearfix">
-        <h2>Any Unusual Weather to Report?</h2>
 
-        <form method="get" action="thanks.html">
+        <section class="homeImages">
+            <article class="card">
+                <img src="images/fishHavenN1.jpg" alt="A landscape picture where you can appreciate a lake, mountains in the back, and a lot of trees.">
 
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}"
-                        required></label>
-                <label class="top">Email* <input type="email" name="email" required
-                        placeholder="someone@gmail.com"></label>
-                <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
-                <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
-            </fieldset>
+            </article>
 
-            <fieldset>
-                <legend>Storm Data</legend>
-                <label class="top">Storm Date <input type="date" name="stormdate"></label>
-                <label class="top">Choose a storm type from the list:
-                    <input list="storms" name="myStorm" /></label>
-                <datalist id="storms">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-                <label class="top">Rating:
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
-                </label>
-                <label class="top"> Storm Region:
-                    <select name="stormRegion">
-                        <option value="">Select Region...</option>
-                        <option value="fishHaven">Fish Haven</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="oneida">Oneida</option>
-                        <option value="pocatello">Pocatello</option>
-                        <option value="preston">Preston</option>
-                        <option value="sodaSprings">Soda Springs</option>
-                    </select>
-                </label>
-                <div class="usDanger">User in Danger</div>
-                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-            </fieldset>
+            <article class="card2">
+                <img src="images/prestonN1.jpg" alt="A landscape picture where you can appreciate a pink sky with snowy mountains in the back.">
 
-            <fieldset>
-                <legend>Additional Information | Comments</legend>
-                <label> <textarea name="textArea" cols="30" rows="10" placeholder="Write something here"></textarea> </label>
-            </fieldset>
+            </article>
 
-            <input type="submit" value="Report Your Weather" class="submitBtn">
+            <article class="card3">
+                <img src="images/sodaSpringsN1.jpg" alt="A landscape picture where you can appreciate a geyser in a sunny day, and a lot of trees in the back..">
 
-        </form>
+            </article>
+        </section>
 
         <h3>Contact Information</h3>
 
