@@ -64,16 +64,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .homeImages .card,
-    .homeImages .card2,
-    .homeImages .card3 {
+    .homeImages .card {
         width: 40rem;
         display: flex;
         flex-direction: row;
     }
-    .homeImages .card:nth-child(1),
-    .homeImages .card2:nth-child(1),
-    .homeImages .card3:nth-child(1) {
+    .homeImages .card:nth-child(1) {
         flex-direction: row-reverse;
     }
 }

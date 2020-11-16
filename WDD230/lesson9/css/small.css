@@ -425,31 +425,23 @@
         margin: 0;
     }
     
-    .homeImages .card img,
-    .homeImages .card2 img,
-    .homeImages .card3 img {
+    .homeImages .card img {
         max-width: 100%;
     }
     
-    .homeImages .card div,
-    .homeImages .card2 div,
-    .homeImages .card3 div {
+    .homeImages .card div {
         text-align: center;
         margin: 0;
         padding: 0;
     }
     
-    .homeImages .card div p,
-    .homeImages .card2 div p,
-    .homeImages .card3 div p {
+    .homeImages .card div p {
         margin: 0;
         font-size: 1.2rem;
         line-height: .7rem;
     }
     
-    .homeImages .card,
-    .homeImages .card2,
-    .homeImages .card3 {
+    .homeImages .card {
         max-width: 100%;
         margin: .4rem;
         box-shadow: 1px 1px 4px 1px #14213D;
