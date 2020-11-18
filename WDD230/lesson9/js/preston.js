@@ -68,25 +68,32 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
-            if (i == 0 || i == 4 || i == 5) {
+            if (i == 1 || i == 5 || i == 6) {
+
 
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
+                let motto = document.createElement('p');
                 let yearFounded = document.createElement('p');
                 let population = document.createElement('p');
                 let annualRainFall = document.createElement('p');
 
+                div.setAttribute("class", "card")
                 h2.textContent = towns[i].name;
+                motto.textContent = towns[i].motto;
+                motto.setAttribute("class", "motto");
                 yearFounded.textContent = 'Year Founded:  ' + towns[i].yearFounded;
                 population.textContent = 'Population:  ' + towns[i].currentPopulation;
                 annualRainFall.textContent = 'Annual Rain Fall:  ' + towns[i].averageRainfall;
 
                 div.appendChild(h2);
+                div.appendChild(motto);
                 div.appendChild(yearFounded);
                 div.appendChild(population);
                 div.appendChild(annualRainFall);
 
                 document.querySelector('article.card').appendChild(div);
             }
+
         }
     });

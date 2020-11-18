@@ -429,6 +429,11 @@
         max-width: 100%;
     }
     
+    .homeImages .card h2 {
+        margin-bottom: .1rem;
+        padding-bottom: .1rem;
+    }
+    
     .homeImages .card div {
         text-align: center;
         margin: 0;
@@ -447,4 +452,11 @@
         box-shadow: 1px 1px 4px 1px #14213D;
         border-radius: 3px;
         background-color: #eebb69;
+    }
+    
+    .homeImages .card .motto {
+        font-size: .8rem;
+        padding-top: 0;
+        margin-top: 0;
+        font-weight: bold;
     }
