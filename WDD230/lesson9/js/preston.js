@@ -68,8 +68,7 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
-            if (i == 1 || i == 5 || i == 6) {
-
+            if (i.name == "Preston" || i.name == "Fish Haven" || i.name == "Soda Springs") {
 
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
@@ -78,7 +77,7 @@ fetch(requestURL)
                 let population = document.createElement('p');
                 let annualRainFall = document.createElement('p');
 
-                div.setAttribute("class", "card")
+
                 h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
                 motto.setAttribute("class", "motto");
