@@ -447,6 +447,7 @@
     }
     
     .homeImages .card {
+        padding: 1rem;
         max-width: 100%;
         margin: .4rem;
         box-shadow: 1px 1px 4px 1px #14213D;

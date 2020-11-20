@@ -63,13 +63,13 @@ fetch(requestURL)
     })
     .then(function(jsonObject) {
 
-        console.table(jsonObject); // temporary checking for valid response and data parsing
-
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
-            if (i.name == "Preston" || i.name == "Fish Haven" || i.name == "Soda Springs") {
+            if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
 
+                let card = document.createElement('article');
+                let img = document.createElement('img');
                 let div = document.createElement('div');
                 let h2 = document.createElement('h2');
                 let motto = document.createElement('p');
@@ -77,7 +77,8 @@ fetch(requestURL)
                 let population = document.createElement('p');
                 let annualRainFall = document.createElement('p');
 
-
+                card.setAttribute('class', 'card');
+                img.setAttribute('src', 'images/' + towns[i].photo);
                 h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
                 motto.setAttribute("class", "motto");
@@ -85,13 +86,15 @@ fetch(requestURL)
                 population.textContent = 'Population:  ' + towns[i].currentPopulation;
                 annualRainFall.textContent = 'Annual Rain Fall:  ' + towns[i].averageRainfall;
 
+                card.appendChild(img);
+                card.appendChild(div);
                 div.appendChild(h2);
                 div.appendChild(motto);
                 div.appendChild(yearFounded);
                 div.appendChild(population);
                 div.appendChild(annualRainFall);
 
-                document.querySelector('article.card').appendChild(div);
+                document.querySelector('section.homeImages').appendChild(card);
             }
 
         }

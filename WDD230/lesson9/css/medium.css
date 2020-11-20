@@ -69,7 +69,7 @@
         display: flex;
         flex-direction: row;
     }
-    .homeImages .card:nth-child(1) {
+    .homeImages .card:nth-child(2) {
         flex-direction: row-reverse;
     }
 }
