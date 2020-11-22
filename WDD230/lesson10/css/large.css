@@ -1,0 +1,56 @@
+@media only screen and (min-width: 900px) {
+    nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    nav ul a {
+        text-align: center;
+    }
+    #primaryNav {
+        display: flex;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .hero {
+        position: relative;
+    }
+    .summary {
+        font-size: larger;
+        border-radius: 0;
+        box-shadow: 2px 2px 0px #14213d8c;
+        position: absolute;
+        top: 0px;
+        left: 35px;
+    }
+    .summary h2 {
+        padding: .3rem;
+    }
+    .gallery7 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery7 figure:hover {
+        box-shadow: 0 0 50px #14213D;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    .homeImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .homeImages .card {
+        display: block;
+        width: unset;
+        max-width: 100%;
+    }
+    .homeImages .card img {
+        margin: 0 auto;
+        margin-bottom: .4rem;
+    }
+}
