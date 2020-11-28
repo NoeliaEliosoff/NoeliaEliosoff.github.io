@@ -470,8 +470,9 @@
         padding: .3rem;
     }
     
-    article.eventsFH div p {
-        font-size: 1.3rem;
-        padding: .2rem;
-        margin: .2rem;
+    article.eventsFH div ul {
+        list-style: square;
+        line-height: 2.5rem;
+        margin-left: 3rem;
+        font-size: 1.2rem;
     }
