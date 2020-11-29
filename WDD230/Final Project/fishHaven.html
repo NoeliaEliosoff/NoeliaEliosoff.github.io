@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Wather Circle - The Fish Haven Page | This page includes information about the weather, as well as some activities in Fish Haven.">
+    <title> Fish Haven - The Weather Circle</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div id="pancakesFriday">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. <br> Saturday at the city park pavilion.
+    </div>
+
+    <header>
+        <picture><img src="images/weatherLogo.png" alt="A logo showing different weathers and people together.">
+        </picture>
+        <section class="slogan">
+            <h1>The Weather Circle</h1>
+            <div>Stay up to date on the weather and something else.</div>
+        </section>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="sodaSprings.html"> Soda Springs</a></li>
+            <li><a href="fishHaven.html" class="active"> Fish Haven</a></li>
+            <li><a href="stormCenter.html"> Storm Center</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+
+        <h2>Fish Haven</h2>
+        <section class="hero">
+            <figure class="myPic">
+                <img srcset="images/franklin500.jpg 500w, images/franklin800.jpg 800w, images/franklin1100.jpg 1100w" src="images/franklin.jpg" alt="Preston landscape showing some mountains covered with snow." sizes="50vw">
+            </figure>
+            <div class="summary">
+                <h2>Weather Summary </h2>
+                <table>
+                    <tr>
+                        <td class="right">Currently</td>
+                        <td>:</td>
+                        <td class="value"><span id="currently"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="right">High</td>
+                        <td>:</td>
+                        <td class="value"> <span id="highTemp"></span> °F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Speed</td>
+                        <td>:</td>
+                        <td class="value"> <span id="wind"></span> mph</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Chill</td>
+                        <td>:</td>
+                        <td class="value"> <span id="windCh"> </span></td>
+                    </tr>
+                    <tr>
+                        <td class="right">Pressure</td>
+                        <td>:</td>
+                        <td class="value"><span id="pressure"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <h3>Five Day Forecast</h3>
+
+        <div class="forecast">
+
+            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek1"></span> <img src="" alt="" id="imgDay1">
+                <p id="forecastDay1"> </p>
+            </div>
+            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek2"></span> <img src="" alt="" id="imgDay2">
+                <p id="forecastDay2"></p>
+            </div>
+            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek3"></span> <img src="" alt="" id="imgDay3">
+                <p id="forecastDay3"></p>
+            </div>
+            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek4"></span> <img src="" alt="" id="imgDay4">
+                <p id="forecastDay4"></p>
+            </div>
+            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek5"></span><img src="" alt="" id="imgDay5">
+                <p id="forecastDay5"></p>
+            </div>
+        </div>
+
+        <article class="importantEv">
+            <h3>Bear Lake Blunder Run</h3>
+
+            <img src="images/fishHavenRun.jpg" alt="An image showing two people running during the 'Bear Lake Blunder Run'.">
+
+            <p>Each year Fish Haven is part of the Bear Lake Blunder Run. A Cool, Autumn loop through the pines, golden aspen and red maples in Bear Lake. <br> 100 Miles, 22, 518′ of climb. Begins at the mouth of Logan Dry Canyon and ends here in Fish Haven,
+                Idaho.
+            </p>
+
+
+        </article>
+
+        <h3>Events:</h3>
+
+        <article class="eventsFH">
+
+        </article>
+        <br>
+        <hr>
+
+        <h3>Contact Information</h3>
+
+        <div class="information ">
+            <div class="contact ">
+                <img src="images/003-pin.png " alt="location " width="20" class="contact-img "> The Weather Circle <br> 70 West Oneida Preston, ID.
+                <br>
+                <img src="images/001-viber.png " alt="phone " width="20" class="contact-img "> (208) 853-1611.
+                <br>
+                <img src="images/002-apple.png " alt="mail " width="20" class="contact-img "> info@theweathercircle.com
+            </div>
+            <div>
+                <a href="https://instagram.com " target="_blank"><img src="images/001-instagram.png " alt="instagram-logo " width="45" class="social-img "></a>
+                <a href="https://facebook.com " target="_blank"><img src="images/002-facebook.png " alt="facebook-logo " width="45" class="social-img "></a>
+                <a href="https://twitter.com " target="_blank"><img src="images/003-twitter.png " alt="twitter-logo " width="45" class="social-img "></a>
+            </div>
+            <div>
+                <img src="images/prestonMap.jpg" alt="A map from the Preston area.">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span>
+            &copy;2020 The Weather Circle | Attributions: link <a href="https://openweathermap.org/"> Open Weather
+                Map</a> | Noelia Eliosoff
+        </span>
+
+        <div id="todaysDate"></div>
+
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="js/windChillFH.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Fredoka One', 'Raleway']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
