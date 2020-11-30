@@ -4,13 +4,21 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        console.log(jsObject);
-
         document.getElementById('highTemp').textContent = jsObject.main.temp_max;
         document.getElementById('wind').textContent = jsObject.wind.speed;
         document.getElementById('pressure').textContent = jsObject.main.pressure;
         document.getElementById('currently').textContent = jsObject.weather[0].description;
 
+        function windChill() {
+            let tempF = parseFloat(document.getElementById('highTemp').value);
+            let speed = parseFloat(document.getElementById('wind').value);
+            if (tempF <= 50.0 && speed > 3.0) {
+                let f = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
+                document.getElementById('windCh').innerHTML = rnd(f, 1);
+            } else {
+                document.getElementById('windCh').innerHTML = "N/A";
+            }
+        }
 
     });
 
@@ -36,19 +44,6 @@ fetch(apiURL1)
             document.getElementById(`imgDay${day+1}`).setAttribute('alt', forecast[day].weather[0].description);
             document.getElementById(`forecastDay${day+1}`).textContent = forecast[day].main.temp + ' °F';
 
+
         }
     });
-
-
-window.onload = windChill;
-
-function windChill() {
-    let tempF = parseFloat(document.getElementById('highTemp').value);
-    let speed = parseFloat(document.getElementById('wind').value);
-    if (tempF <= 50.0 && speed > 3.0) {
-        let f = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
-        document.getElementById('windCh').innerHTML = rnd(f, 1);
-    } else {
-        document.getElementById('windCh').innerHTML = "N/A";
-    }
-}

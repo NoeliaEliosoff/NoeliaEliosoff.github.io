@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Wather Circle - The Preston Page | This page includes information about the weather, as well as some activities in Preston.">
-    <title> Preston - The Weather Circle</title>
+    <meta name="description" content="The Wather Circle - The Fish Haven Page | This page includes information about the weather, as well as some activities in Fish Haven.">
+    <title> Fish Haven - The Weather Circle</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -32,9 +32,9 @@
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="index.html"> Home</a></li>
-            <li><a href="preston.html" class="active">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="sodaSprings.html"> Soda Springs</a></li>
-            <li><a href="fishHaven.html"> Fish Haven</a></li>
+            <li><a href="fishHaven.html" class="active"> Fish Haven</a></li>
             <li><a href="stormCenter.html"> Storm Center</a></li>
             <li><a href="gallery.html"> Gallery</a></li>
         </ul>
@@ -42,10 +42,10 @@
 
     <main class="clearfix">
 
-        <h2>Preston Idaho</h2>
+        <h2>Fish Haven</h2>
         <section class="hero">
             <figure class="myPic">
-                <img srcset="images/franklin500.jpg 500w, images/franklin800.jpg 800w, images/franklin1100.jpg 1100w" src="images/franklin.jpg" alt="Preston landscape showing some mountains covered with snow." sizes="50vw">
+                <img src="images/fishHero.jpg" alt="A landscape image from Fish Haven showing some mountains covered with snow and a los of pines.">
             </figure>
             <div class="summary">
                 <h2>Weather Summary </h2>
@@ -100,23 +100,21 @@
             </div>
         </div>
 
-        <article>
-            <h3>Festival Of Lights</h3>
+        <article class="importantEv">
+            <h3>Bear Lake Blunder Run</h3>
 
-            <img src="images/lightsFestival.jpg" alt="An image showing and Idaho sign made of lights and other light decorations.">
+            <img src="images/fishHavenRun.jpg" alt="An image showing two people running during the 'Bear Lake Blunder Run'.">
 
-            <p>Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving and goes until December 31. The festival was started by two local business men (Wayne Bell and Walter Ross) along with many other community organizations
-                to help celebrate Christmas within the community. The festival consists of a lighted parade, fireworks, and displays in the city park. The merchants along the main street of Preston have their store fronts decorated with Christmas lights
-                during the festival. <br> A key event of the festival is the International Bed Race, which is held on the Saturday following Thanksgiving on the main street of Preston. Additional events are a kids' parade and free movie.
+            <p>Each year Fish Haven is part of the Bear Lake Blunder Run. A Cool, Autumn loop through the pines, golden aspen and red maples in Bear Lake. <br> 100 Miles, 22, 518′ of climb. Begins at the mouth of Logan Dry Canyon and ends here in Fish Haven,
+                Idaho.
             </p>
 
 
         </article>
 
-
         <h3>Events:</h3>
 
-        <article class="eventsP">
+        <article class="eventsFH">
 
         </article>
         <br>
@@ -145,14 +143,17 @@
 
     <footer>
         <span>
-            &copy;2020 The Weather Circle | Attributions: link <a href="https://openweathermap.org/"> Open Weather Map</a>  | Noelia Eliosoff
+            &copy;2020 The Weather Circle | Attributions: link <a href="https://openweathermap.org/"> Open Weather
+                Map</a> | Noelia Eliosoff
         </span>
 
         <div id="todaysDate"></div>
 
     </footer>
-    <script src="js/windChillF.js"></script>
+
     <script src="js/windChill.js"></script>
+    <script src="js/weatherCircle.js"></script>
+    <script src="js/fetchFH.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

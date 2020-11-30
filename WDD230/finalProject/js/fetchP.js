@@ -9,19 +9,6 @@ fetch(apiURL)
         document.getElementById('pressure').textContent = jsObject.main.pressure;
         document.getElementById('currently').textContent = jsObject.weather[0].description;
 
-
-        function windChill() {
-            let tempF = parseFloat(document.getElementById('highTemp').value);
-            let speed = parseFloat(document.getElementById('wind').value);
-            if (tempF <= 50.0 && speed > 3.0) {
-                let f = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
-                document.getElementById('windCh').innerHTML = rnd(f, 1);
-            } else {
-                document.getElementById('windCh').innerHTML = "N/A";
-            }
-        }
-
-
     });
 
 const apiURL1 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=d2c067f6566bb0ca2720c9aca11da2d8';
