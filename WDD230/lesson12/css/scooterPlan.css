@@ -1,0 +1,144 @@
+                            header {
+                                text-align: center;
+                                padding: .5rem;
+                                background-color: #8D99AE;
+                                border-radius: 0.5rem;
+                                font-size: 1.5rem;
+                            }
+                            
+                            header h1 {
+                                color: #2B2D42;
+                            }
+                            
+                            body {
+                                padding: 0.6rem;
+                                margin: 0 auto;
+                                font-size: 16px;
+                                max-width: 760px;
+                            }
+                            
+                            h1,
+                            h2 {
+                                color: #D90429;
+                                font-family: 'Bebas Neue', Tahoma, cursive;
+                            }
+                            
+                            nav {
+                                background-color: #2B2D42;
+                                text-align: center;
+                                box-shadow: 0 2px 20px #2B2D42;
+                                border-radius: 0.2rem;
+                            }
+                            
+                            nav ul {
+                                justify-content: center;
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                            }
+                            
+                            nav ul li a {
+                                display: block;
+                                color: #8D99AE;
+                                font-family: 'Poppins', sans-serif;
+                                text-align: center;
+                                padding: 0.75rem;
+                                text-decoration: none;
+                                font-size: 1.2rem;
+                            }
+                            
+                            nav a:hover {
+                                background-color: #8D99AE;
+                                color: #2B2D42;
+                            }
+                            
+                            .active {
+                                color: #EF233C;
+                            }
+                            
+                            main {
+                                font-size: 1.1rem;
+                                line-height: 1.6rem;
+                                background-color: #EDF2F4;
+                                color: #14213D;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            
+                            main section {
+                                margin: 0.5rem;
+                                padding: 0.5rem;
+                            }
+                            
+                            main section img {
+                                max-width: 30%;
+                            }
+                            
+                            .colors {
+                                padding: 1rem;
+                                width: 100%;
+                                margin: 0 auto;
+                                text-align: center
+                            }
+                            
+                            .colors th {
+                                background-color: #999;
+                            }
+                            
+                            .colors td {
+                                width: 25%;
+                                height: 3em;
+                            }
+                            
+                            .paragraphs {
+                                color: #fff;
+                                background-color: #2B2D42;
+                            }
+                            
+                            .headings {
+                                color: #fff;
+                                background-color: #D90429;
+                            }
+                            
+                            .mainBack {
+                                background-color: #EDF2F4;
+                            }
+                            
+                            .headerFooter {
+                                background-color: #8D99AE;
+                            }
+                            
+                            footer {
+                                color: #2B2D42;
+                                text-align: center;
+                                padding: .9rem;
+                                background-color: #8D99AE;
+                                font-family: 'Poppins', sans-serif;
+                                text-decoration: none;
+                                border-radius: 0.5rem;
+                            }
+                            /* Tablet Views ******************************/
+                            
+                            @media only screen and (min-width: 37.5em) {
+                                nav ul {
+                                    display: flex;
+                                }
+                                nav ul li {
+                                    flex: 1 1 100%;
+                                }
+                                nav a {
+                                    font-size: 1rem;
+                                }
+                                main {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+                            
+                            @media only screen and (min-width: 60em) {
+                                nav a {
+                                    font-size: 1.1rem;
+                                }
+                                main {
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                }
+                            }
