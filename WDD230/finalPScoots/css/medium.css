@@ -1,0 +1,55 @@
+@media only screen and (min-width: 37.5em) {
+    div.logo picture {
+        width: 32%;
+    }
+    .reserve {
+        margin-right: 1.5rem;
+        width: 8.5rem;
+        height: 4rem;
+    }
+    main {
+        max-width: 650px;
+    }
+    main div.pics {
+        display: flex;
+    }
+    main div.pics figure {
+        max-width: 15rem;
+    }
+    main div.pics figure figcaption {
+        padding: 2%;
+        line-height: 1rem;
+        font-size: .7rem;
+    }
+    table {
+        width: 500px;
+    }
+    td,
+    th {
+        padding: .6rem;
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 350px;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 350px;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

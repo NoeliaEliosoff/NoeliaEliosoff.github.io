@@ -1,0 +1,32 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: rgb(18, 69, 128);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5rem;
+    padding: .5rem;
+    border: 2px solid rgb(1, 27, 51);
+    background-color: rgb(75, 103, 131);
+    box-shadow: 0 0 10px 7px #ccc;
+    text-align: center;
+}
+
+div.cards img {
+    max-width: 100%;
+}
+
+section {
+    border: 1px solid rgb(1, 27, 51);
+    padding: .5rem;
+    margin: 0 auto;
+    background-color: rgb(95, 129, 173);
+}

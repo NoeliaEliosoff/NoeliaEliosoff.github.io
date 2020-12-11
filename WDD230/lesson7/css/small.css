@@ -302,7 +302,7 @@
     }
     
     .gallery7 figure img {
-        max-width: 100%;
+        max-width: 300px;
         filter: blur(0em);
         transition: filter 0.5s;
     }
