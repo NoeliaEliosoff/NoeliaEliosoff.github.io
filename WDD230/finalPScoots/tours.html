@@ -44,46 +44,32 @@
 
     <main>
 
-        <h2>Reservation Info:</h2>
 
-        <form method="get" action="confirmation.html">
-
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}"
-                        required></label>
-                <label class="top">Email* <input type="email" name="email" required
-                        placeholder="someone@gmail.com"></label>
-                <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
-                <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
-                <label class="top">Home State or Country: <input type="text" name="homeCountryOrState"></label>
-                <label class="top">Cruise Line: <input type="text" name="cruiseLine"></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Rental Information</legend>
-
-                <label class="top "> Vehicle Rental:
-                    <select name="vehicles ">
-                        <option value=" ">Select Your Vehicle...</option>
-                        <option value="hondaMetropolitan ">Honda Metropolitan</option>
-                        <option value="hondaDio ">Honda Dio</option>
-                        <option value="hondaPCX150 ">Honda PCX150</option>
-                        <option value="hondaPioneerATV ">Honda Pioneer ATV</option>
-                        <option value="4-doorJeepWrangler ">4-door Jeep Wrangler</option>
-                        <option value="2-doorJeepWrangler ">2-door Jeep Wrangler</option>
-                    </select>
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Additional Information | Comments</legend>
-                <textarea name="textArea " cols="30 " rows="10 " placeholder="Special accommodations/comments such as the need and location of a drop-off request."></textarea>
-            </fieldset>
-
-            <input type="submit" value="Make Your Reservation" class="submitBtn">
-
-        </form>
+        <div id="container">
+            <div id="toggleContainer">
+                <label>Photo Gallery</label>
+                <div id="toggle">
+                    <div id="outer3">
+                        <div id="slider3"></div>
+                    </div>
+                    <label>Tiles</label>
+                </div>
+            </div>
+            <div id="galleryView">
+                <div id="galleryContainer">
+                    <div id="leftView"></div>
+                    <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                    <a id="linkTag">
+                        <div id="mainView"></div>
+                    </a>
+                    <div id="rightView"></div>
+                    <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                </div>
+            </div>
+            <div id="tilesView">
+                <div id="tilesContainer"></div>
+            </div>
+        </div>
 
 
 
@@ -113,6 +99,7 @@
                 href="https://www.byui.edu/online " target="_blank ">BYU-Idaho Online Learning</a>
         </span>
     </footer>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>

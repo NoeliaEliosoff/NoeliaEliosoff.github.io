@@ -28,6 +28,9 @@
     th {
         padding: .6rem;
     }
+    .vehicles {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .mapouter {
         position: relative;
         text-align: right;

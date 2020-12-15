@@ -8,6 +8,7 @@ fetch(rentURL)
         const types = jsonObject['types'];
 
         for (let i = 0; i < types.length; i++) {
+
             document.getElementById(`rT${i+1}`).textContent = types[i].rentalType;
             document.getElementById(`mP${i+1}`).textContent = types[i].maxPersons;
             document.getElementById(`hDR${i+1}`).textContent = types[i].halfDayRes;

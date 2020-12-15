@@ -45,15 +45,15 @@
     nav a {
         font-size: 1.1rem;
     }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     table {
         width: 70%;
     }
     td,
     th {
         padding: .6rem;
+    }
+    .vehicles {
+        grid-template-columns: repeat(3, 1fr);
     }
     .social-img {
         width: 3rem;
