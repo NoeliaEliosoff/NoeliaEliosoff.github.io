@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site Plan page for 'Scoots'. Here you are going to find information about how the site will look like.">
-    <title> Home | Scoots</title>
+    <meta name="description" content="Reservations page. In this page, you will be able to reserve your ride by providing some information.">
+    <title> Reservations | Scoots</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
@@ -25,11 +25,6 @@
                 <div>Find your best ride</div>
             </section>
         </div>
-
-        <div class="reserve">
-            <p>Rent your ride now</p>
-            <input type=button onClick="location.href='reservations.html'" value='Reserve'>
-        </div>
     </header>
 
     <nav>
@@ -46,24 +41,24 @@
 
         <h2>Reservation Info:</h2>
 
-        <form method="get" action="confirmation.html">
-
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}"
+        <form method="get" action="confirmation.html" class="myForm">
+            <div class="info">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}"
                         required></label>
-                <label class="top">Email* <input type="email" name="email" required
+                    <label class="top">Email* <input type="email" name="email" required
                         placeholder="someone@gmail.com"></label>
-                <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
-                <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
-                <label class="top">Home State or Country: <input type="text" name="homeCountryOrState"></label>
-                <label class="top">Cruise Line: <input type="text" name="cruiseLine"></label>
-            </fieldset>
+                    <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+                    <label class="top">Home State or Country: <input type="text" name="homeCountryOrState"></label>
+                    <label class="top">Cruise Line: <input type="text" name="cruiseLine"></label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Rental Information</legend>
+                <fieldset>
+                    <legend>Rental Information</legend>
 
-                <label class="top "> Vehicle Rental:
+                    <label class="top "> Vehicle Rental:
                     <select name="vehicles ">
                         <option value=" ">Select Your Vehicle...</option>
                         <option value="hondaMetropolitan ">Honda Metropolitan</option>
@@ -74,43 +69,25 @@
                         <option value="2-doorJeepWrangler ">2-door Jeep Wrangler</option>
                     </select>
                 </label>
-            </fieldset>
+                </fieldset>
+            </div>
+            <div class="message">
+                <fieldset>
+                    <legend>Additional Information | Comments</legend>
+                    <textarea name="textArea " cols="30 " rows="20 " placeholder="Special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                </fieldset>
 
-            <fieldset>
-                <legend>Additional Information | Comments</legend>
-                <textarea name="textArea " cols="30 " rows="10 " placeholder="Special accommodations/comments such as the need and location of a drop-off request."></textarea>
-            </fieldset>
-
-            <input type="submit" value="Make Your Reservation" class="submitBtn">
-
+                <input type="submit" value="Make Your Reservation" class="submitBtn">
+            </div>
         </form>
 
-
-
-        <h3>Contact Information</h3>
-
-        <div class="information ">
-            <div class="contact ">
-                <img src="images/003-pin.png " alt="location " width="20 " class="contact-img "> The Weather Circle <br> 70 West Oneida Preston, ID.
-                <br>
-                <img src="images/001-viber.png " alt="phone " width="20 " class="contact-img "> (208) 853-1611.
-                <br>
-                <img src="images/002-apple.png " alt="mail " width="20 " class="contact-img "> info@theweathercircle.com
-            </div>
-            <div>
-                <a href="https://instagram.com " target="_blank "><img src="images/001-instagram.png " alt="instagram-logo " width="45 " class="social-img "></a>
-                <a href="https://facebook.com " target="_blank "><img src="images/002-facebook.png " alt="facebook-logo " width="45 " class="social-img "></a>
-                <a href="https://twitter.com " target="_blank "><img src="images/003-twitter.png " alt="twitter-logo " width="45 " class="social-img "></a>
-            </div>
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Cozumel%20Island%2C%20Mexico&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/145/">saga</a></div>
-            </div>
     </main>
 
     <footer>
         <span>
-            &copy;2020 | Noelia Eliosoff | Mar del Plata, Buenos Aires, Argentina | <a
-                href="https://www.byui.edu/online " target="_blank ">BYU-Idaho Online Learning</a>
+            &copy;2020 | Noelia Eliosoff | <a
+            href="attributions.html" target="_blank">Attributions</a> | <a
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>
         </span>
     </footer>
 </body>

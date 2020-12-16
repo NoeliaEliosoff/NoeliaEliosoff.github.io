@@ -27,23 +27,13 @@
     main {
         max-width: 1100px;
     }
-    main div.pics {
-        display: flex;
-    }
-    main div.pics figure {
-        max-width: 18.5rem;
-    }
-    main div.pics figure figcaption {
-        padding: 2%;
-        line-height: 1rem;
-        font-size: .7rem;
-    }
-    h2.gallery {
-        font-size: 2.1rem;
-        margin: 2rem;
-    }
     nav a {
         font-size: 1.1rem;
+    }
+    div.summary {
+        position: absolute;
+        top: 0px;
+        left: 35px;
     }
     table {
         width: 70%;
@@ -52,11 +42,71 @@
     th {
         padding: .6rem;
     }
+    .forecast {
+        max-width: 70%;
+    }
     .vehicles {
         grid-template-columns: repeat(3, 1fr);
+        margin: 3rem;
+    }
+    form.myForm {
+        justify-self: center;
+        display: flex;
+    }
+    form.myForm div.message {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    form.myForm div.info {
+        flex: 1;
+        order: 1;
+        margin-right: 1rem;
+    }
+    form.myForm div label.top input,
+    form.myForm div label.top select {
+        width: 25rem;
+    }
+    #container {
+        width: 80%;
+    }
+    #container {
+        background: rgb(141, 153, 174);
+        background: linear-gradient(90deg, rgba(141, 153, 174, 0.97) 1%, rgba(138, 139, 151, 0.97) 45%, rgba(43, 45, 66, 0.958420868347339) 82%);
+        border-radius: 1rem;
+    }
+    #galleryContainer {
+        width: 900px;
+    }
+    #mainView {
+        height: 350px;
+        width: 500px;
+    }
+    #leftView {
+        height: 400px;
+        width: 150px;
+    }
+    #rightView {
+        height: 400px;
+        width: 150px;
+    }
+    .navBtns {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    #navLeft {
+        left: 5px;
+    }
+    #navRight {
+        right: 5px;
+    }
+    div.title {
+        margin-top: .2rem;
+        margin-bottom: 1rem;
     }
     .social-img {
-        width: 3rem;
+        width: 2.5rem;
     }
     .mapouter {
         position: relative;

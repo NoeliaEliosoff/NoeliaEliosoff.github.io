@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains contact information for Scoots. Here you will find its telephone number, address and email.">
+    <title> Contact | Scoots</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <picture> <img src="images/logo.png" alt="A logo showing a beach and a red scooter."></picture>
+            <section class="slogan">
+                <h1>Scoots</h1>
+                <div>Find your best ride</div>
+            </section>
+        </div>
+
+        <div class="reserve">
+            <p>Rent your ride now</p>
+            <input type=button onClick="location.href='reservations.html'" value='Reserve'>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="rentals.html"> Rentals</a></li>
+            <li><a href="reservations.html"> Reservations</a></li>
+            <li><a href="tours.html"> Tours</a></li>
+            <li><a href="contact.html" class="active"> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+
+
+        <h2 class="tourPlan">Contact Information</h2>
+
+        <div class="information ">
+            <div class="contact ">
+                <img src="images/003-pin.png " alt="location " width="20" class="contact-img "> Scoots<br> #278 22 de Enero - Near 'Playa del Carmen-Cozumel Ferry' | <br> #256 25 de Julio - Near 'Terminal Puerta Maya'. |
+                <br> Cozumel, Mexico.
+                <br>
+                <img src="images/001-viber.png " alt="phone " width="20" class="contact-img "> (52) 987 833-6501.
+                <br>
+                <img src="images/002-apple.png " alt="mail " width="20" class="contact-img "> info@scoots.com
+            </div>
+            <div>
+                <a href="https://instagram.com " target="_blank"><img src="images/001-instagram.png " alt="instagram-logo " width="45" class="social-img "></a>
+                <a href="https://facebook.com " target="_blank"><img src="images/002-facebook.png " alt="facebook-logo " width="45" class="social-img "></a>
+                <a href="https://twitter.com " target="_blank"><img src="images/003-twitter.png " alt="twitter-logo " width="45" class="social-img "></a>
+            </div>
+        </div>
+
+        <div class="maps">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Terminal%20Puerta%20Maya%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Playa%20del%20Carmen-Cozumel%20Ferry&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            </div>
+        </div>
+
+        <form method="get" action="confirmationC.html">
+            <fieldset class="contactForm">
+                <legend>Leave Us You Message</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}"
+                        required></label>
+                <label class="top">Email* <input type="email" name="email" required
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="tel" placeholder="1235551234" required></label>
+                <textarea name="textArea " cols="30 " rows="10" placeholder="Type your message here..."></textarea>
+
+                <input type="submit" value="Send Message" class="submitBtn">
+            </fieldset>
+
+    </main>
+
+    <footer>
+        <span>
+            &copy;2020 | Noelia Eliosoff | <a
+            href="attributions.html" target="_blank">Attributions</a> | <a
+                href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>
+        </span>
+    </footer>
+</body>
+
+</html>

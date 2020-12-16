@@ -91,7 +91,7 @@ div.logo section.slogan div {
 h1,
 h2,
 h3 {
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: #D90429;
     font-family: 'Bebas Neue', Tahoma, cursive;
 }
@@ -125,7 +125,7 @@ nav ul li a {
     text-align: center;
     padding: .75rem 0 .75rem 0;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 nav a:hover {
@@ -133,16 +133,44 @@ nav a:hover {
     color: #2B2D42;
 }
 
+picture {
+    width: 95%;
+    margin: 0 auto;
+}
+
+picture img {
+    width: 100%;
+}
+
 .active {
     color: #EF233C;
 }
 
+div.hero {
+    position: relative;
+}
+
+div.summary {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: bold;
+    padding: .5rem;
+    text-align: center;
+}
+
+div.summary h2 {
+    margin: .5rem 0;
+}
+
 .summary table {
+    margin: 0 auto;
     font-size: 1.2rem;
     padding: .5rem;
     width: max-content;
-    background-color: #8D99AE;
-    border: 1px solid #2B2D42;
+    background-color: #8d99aea4;
+    border: 1px solid #2b2d42bb;
 }
 
 .summary table td {
@@ -157,15 +185,7 @@ nav a:hover {
     padding: .9rem .9rem .9rem 0;
 }
 
-.summary {
-    font-size: larger;
-    font-weight: bold;
-    padding: .5rem;
-    text-align: center;
-}
-
 .forecast {
-    max-width: 70%;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -198,62 +218,12 @@ nav a:hover {
     font-weight: bolder;
 }
 
-picture.hero {
+picture.heroImg {
     max-width: 100%;
 }
 
-picture.hero img {
+picture.heroImg img {
     width: 100%;
-}
-
-main section {
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
-
-main section img {
-    max-width: 30%;
-}
-
-main div.pics {
-    display: block;
-    margin: 0 auto;
-}
-
-main div.pics figure img[data-src] {
-    filter: blur(0.2em);
-}
-
-main div.pics figure {
-    max-width: 90%;
-}
-
-main div.pics figure img {
-    max-width: 100%;
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-
-main div.pics figure {
-    width: max-content;
-    height: fit-content;
-    margin: .5rem;
-    padding: .6rem;
-    border: 1px solid #2B2D42;
-}
-
-main div.pics figure figcaption {
-    font-size: smaller;
-    font-style: italic;
-    text-align: center;
-    padding: 3%;
-    line-height: .2rem;
-    font-size: .5rem;
-}
-
-h2.gallery {
-    font-size: 1.5rem;
-    margin: 1rem;
 }
 
 ul.rentals li {
@@ -270,7 +240,7 @@ caption {
 }
 
 table {
-    margin: 2.5rem auto;
+    margin: 4rem auto;
     font-family: 'Poppins', sans-serif;
     border-collapse: collapse;
     width: 250px;
@@ -298,6 +268,7 @@ thead th {
 }
 
 .vehicles {
+    margin: 1.5rem auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: .5rem;
@@ -377,40 +348,66 @@ div.confirm img {
     margin: 0 auto;
 }
 
-form fieldset {
-    margin: 2rem 0;
-    border: 3px solid #8D99AE;
-    border-radius: 10px;
-    padding: .5rem 2%;
+form.myForm {
+    display: block;
 }
 
-form legend {
+form.myForm div.message {
+    display: block;
+}
+
+form.myForm div.info {
+    display: block;
+}
+
+fieldset.contactForm {
+    margin: 3.5rem auto;
+    width: max-content;
+    padding: 2rem;
+}
+
+fieldset.contactForm textarea {
+    margin-top: 1rem;
+}
+
+fieldset.contactForm input.submitBtn {
+    margin: 1.5rem auto;
+}
+
+fieldset {
+    margin: 1rem 0;
+    border: 3px solid #8D99AE;
+    border-radius: 10px;
+    padding: 1rem 5%;
+}
+
+legend {
     color: #2b2d42;
     font-weight: bolder;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 
-form label.top {
+label.top {
     display: block;
     padding-top: 1rem;
     color: #2b2d42;
     font-size: .9rem;
 }
 
-form label.top input,
-form label.top select {
+label.top input,
+label.top select {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    max-width: 20rem;
+    width: 15rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-form input.submitBtn {
+input.submitBtn {
     border: none;
     background-color: #2B2D42;
     color: #8D99AE;
@@ -421,67 +418,50 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-form label.top input:required {
+label.top input:required {
     border-left: red solid 6px;
 }
 
-form label.top input:required:valid {
+label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-form fieldset textarea {
+fieldset textarea {
     border-radius: .3rem;
     max-width: 20rem;
 }
 
-#toggleContainer label {
-    text-align: center;
-    width: 70px;
-}
-
 #container {
-    height: 100vh;
-    width: 100%;
+    padding: 2rem;
+    height: auto;
+    width: 50%;
     box-sizing: border-box;
+    margin: 3rem auto;
+    background: none;
 }
 
-#toggleContainer {
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 95vw;
+div.title {
+    margin: 0 auto;
     position: absolute;
+    text-align: center;
 }
 
-#tilesContainer {
-    min-height: 90vh;
-    width: 100vw;
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-content: center;
+div.title label {
+    color: #D90429;
+    font-family: 'Bebas Neue', Tahoma, cursive;
+    text-align: center;
+    font-size: 2rem;
+    justify-self: center;
 }
 
-.tileItem {
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-    border-radius: 5px;
-    transition: all 0.5s ease;
-}
-
-.tileItem:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
+div.title p {
+    font-size: .9rem;
 }
 
 #galleryContainer {
-    height: 500px;
-    width: 800px;
+    margin-top: 6rem;
+    height: auto;
+    width: 300px;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -491,70 +471,15 @@ form fieldset textarea {
     position: relative;
 }
 
-#toggle {
-    height: 10vh;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-}
-
-#tilesView {
-    min-height: 100vh;
-    width: 100vw;
-    background: #2b2d42bb;
-    background: linear-gradient(111deg, #2b2d427c 0%, #2b2d42e3 52%, #2b2d42b2 100%);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
 #galleryView {
-    height: 100vh;
-    width: 100vw;
-    background: #2b2d42bb;
-    background: linear-gradient(111deg, #2b2d427c 0%, #2b2d42e3 52%, #2b2d42b2 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#outer3 {
-    width: 100px;
-    height: 40px;
-    background-color: white;
-    margin: 10px auto;
-    border-radius: 3px;
-    border: 2px solid white;
-    transition: all 0.5s;
-}
-
-#slider3 {
-    height: 36px;
-    width: 46px;
-    background-color: #2B2D42;
-    border-radius: 3px;
-    transition: all 0.5s;
-}
-
-#slider3.active {
-    -webkit-transform: translatex(50px);
-    -ms-transform: translatex(50px);
-    -o-transform: translatex(50px);
-    transform: translatex(50px);
-    transition: all 0.5s;
-    background-color: #2B2D42;
-}
-
-#outer3.outerActive {
-    background-color: white;
-    border: 2px solid white;
-    transition: all 0.5s;
 }
 
 #mainView {
-    height: 450px;
-    width: 450px;
+    height: 350px;
+    width: 250px;
     border-radius: 5px;
     background-color: #2b2d42;
     margin-left: 10px;
@@ -569,8 +494,8 @@ form fieldset textarea {
 }
 
 #leftView {
-    height: 400px;
-    width: 150px;
+    height: 350px;
+    width: 50px;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(5deg);
@@ -588,8 +513,8 @@ form fieldset textarea {
 }
 
 #rightView {
-    height: 400px;
-    width: 150px;
+    height: 350px;
+    width: 50px;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(-5deg);
@@ -607,9 +532,9 @@ form fieldset textarea {
 }
 
 .navBtns {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 30%;
     border: none;
     position: absolute;
     opacity: 0.8;
@@ -625,17 +550,46 @@ form fieldset textarea {
 }
 
 #navLeft {
-    left: 50px;
+    left: 5px;
 }
 
 #navRight {
-    right: 50px;
+    right: 5px;
 }
 
 #linkTag {
     cursor: pointer;
     z-index: 1;
     box-sizing: border-box;
+}
+
+h2.tourPlan {
+    font-size: 2rem;
+    color: #2B2D42;
+    letter-spacing: .2rem;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+main article {
+    margin: 2rem auto;
+}
+
+main article p {
+    padding: .6rem;
+    line-height: 2rem;
+}
+
+main article img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h3.infoH {
@@ -650,37 +604,26 @@ h3.infoH {
 .information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .25fr 1fr;
     grid-gap: .2rem;
 }
 
 .information div:nth-child(1) {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
 }
 
 .information div:nth-child(2) {
     grid-column: 3 / 5;
-    grid-row: 1 / 2;
     align-self: center;
     justify-self: left;
     margin-left: 6rem;
 }
 
-.information div:nth-child(3) {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    align-self: center;
-    justify-self: center;
-}
-
 .contact {
     font-size: .9rem;
     line-height: 1.5rem;
-    margin-left: 25px;
-    margin-top: 15px;
+    margin: 1rem 0 3rem 3rem;
 }
 
 .social-img {
@@ -690,6 +633,12 @@ h3.infoH {
 
 .contact-img {
     padding: 0px;
+}
+
+div.maps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .mapouter {
