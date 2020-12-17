@@ -66,7 +66,7 @@ div.logo section.slogan div {
     margin-right: 0;
     align-self: center;
     text-align: center;
-    background-color: #d904274d;
+    background-color: #E6EEFB;
     border: #2B2D42 .3px solid;
     height: 3.7rem;
     padding: .5rem;
@@ -76,7 +76,7 @@ div.logo section.slogan div {
 .reserve p {
     margin: 0;
     font-size: 1.2rem;
-    color: #2B2D42;
+    color: #d90427;
     font-family: 'Bebas Neue', Tahoma, cursive;
 }
 
@@ -84,7 +84,7 @@ div.logo section.slogan div {
     color: #8D99AE;
     font-family: 'Poppins', sans-serif;
     width: 3.8rem;
-    background-color: #2b2d429d;
+    background-color: #2b2d42;
     font-size: .8rem;
     margin-top: .2rem;
     padding: .3rem;
@@ -163,7 +163,7 @@ picture img {
 }
 
 .active {
-    color: #EF233C;
+    color: #EC6D74;
 }
 
 div.hero {

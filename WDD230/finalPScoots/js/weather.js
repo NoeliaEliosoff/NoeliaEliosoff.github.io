@@ -30,7 +30,7 @@ fetch(apiURL1)
             const imageSrc = forecast[day].weather[0].icon;
 
             document.getElementById(`dayOfWeek${day+1}`).textContent = weekdays[d.getDay()];
-            document.getElementById(`imgDay${day+1}`).setAttribute('src', 'http://openweathermap.org/img/wn/' + imageSrc + '.png');
+            document.getElementById(`imgDay${day+1}`).setAttribute('src', 'https://openweathermap.org/img/wn/' + imageSrc + '.png');
             document.getElementById(`imgDay${day+1}`).setAttribute('alt', forecast[day].weather[0].description);
             document.getElementById(`forecastDay${day+1}`).textContent = forecast[day].main.temp + ' °F';
 
