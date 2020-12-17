@@ -27,8 +27,8 @@
     main {
         max-width: 1100px;
     }
-    nav a {
-        font-size: 1.1rem;
+    nav {
+        width: 900px;
     }
     div.summary {
         position: absolute;
@@ -68,7 +68,7 @@
         width: 25rem;
     }
     #container {
-        width: 80%;
+        width: 100%;
     }
     #container {
         background: rgb(141, 153, 174);
@@ -109,15 +109,11 @@
         width: 2.5rem;
     }
     .mapouter {
-        position: relative;
-        text-align: right;
-        height: 350px;
+        height: 550px;
         width: 400px;
     }
     .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 350px;
+        height: 550px;
         width: 400px;
     }
 }

@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +31,8 @@
     </header>
 
     <nav>
-        <ul>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="index.html" class="active"> Home</a></li>
             <li><a href="rentals.html"> Rentals</a></li>
             <li><a href="reservations.html"> Reservations</a></li>
@@ -74,18 +73,21 @@
 
     <main>
 
-        <h2>Three Day Forecast</h2>
+        <div class="forecastDiv">
 
-        <div class="forecast">
+            <h2>Three Day Forecast</h2>
 
-            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek1"></span> <img src="" alt="" id="imgDay1">
-                <p id="forecastDay1"> </p>
-            </div>
-            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek2"></span> <img src="" alt="" id="imgDay2">
-                <p id="forecastDay2"></p>
-            </div>
-            <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek3"></span> <img src="" alt="" id="imgDay3">
-                <p id="forecastDay3"></p>
+            <div class="forecast">
+
+                <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek1"></span> <img src="" alt="" id="imgDay1">
+                    <p id="forecastDay1"> </p>
+                </div>
+                <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek2"></span> <img src="" alt="" id="imgDay2">
+                    <p id="forecastDay2"></p>
+                </div>
+                <div class="forecastCol"> <span class="forecastDay" id="dayOfWeek3"></span> <img src="" alt="" id="imgDay3">
+                    <p id="forecastDay3"></p>
+                </div>
             </div>
         </div>
 
@@ -155,7 +157,22 @@
             href="attributions.html" target="_blank">Attributions</a> | <a
                 href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a>
         </span>
+        <br> <br>
+        <span class="dateModified"><strong>Last Updated:</strong>
+            <script src="js/modified.js"></script>
+        </span>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+                google: {
+                    families: ['Bebas Neue', 'Poppins']
+                }
+            }
+
+        );
+    </script>
+    <script src="js/toggleNav.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/gallery.js"></script>
 </body>

@@ -101,20 +101,39 @@ main {
     color: #14213D;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
+    padding: 1.5rem .2rem;
+}
+
+.hide {
+    display: none;
+}
+
+nav button {
+    padding: .6rem;
+    background-color: #2B2D42;
+    border: .1rem solid #8D99AE;
+    color: #8D99AE;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 1.5rem;
+}
+
+nav button:hover {
+    background-color: #8D99AE;
+    color: #2b2d42;
 }
 
 nav {
-    max-width: 80%;
-    margin: 0 auto;
-    background-color: #2B2D42;
+    max-width: max-content;
     text-align: center;
 }
 
 nav ul {
+    background-color: #2B2D42;
+    padding: 1rem;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -123,7 +142,7 @@ nav ul li a {
     color: #8D99AE;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: .75rem 0 .75rem 0;
+    padding: 1rem;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -147,6 +166,7 @@ picture img {
 }
 
 div.hero {
+    margin-top: 1rem;
     position: relative;
 }
 
@@ -183,6 +203,10 @@ div.summary h2 {
 
 .summary table td.value {
     padding: .9rem .9rem .9rem 0;
+}
+
+div.forecastDiv {
+    margin: 4rem auto;
 }
 
 .forecast {
@@ -447,7 +471,7 @@ div.title {
 }
 
 div.title label {
-    color: #D90429;
+    color: #2b2d42;
     font-family: 'Bebas Neue', Tahoma, cursive;
     text-align: center;
     font-size: 2rem;
@@ -644,15 +668,15 @@ div.maps {
 .mapouter {
     position: relative;
     text-align: right;
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 150px;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 150px;
 }
 
 footer {

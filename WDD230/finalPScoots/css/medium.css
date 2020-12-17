@@ -10,6 +10,27 @@
     main {
         max-width: 650px;
     }
+    nav {
+        width: 550px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    nav ul {
+        padding: .2rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    nav ul a {
+        padding: .75rem 0 .75rem 0;
+        text-align: center;
+    }
+    nav button {
+        display: none;
+    }
+    #primaryNav {
+        display: flex;
+    }
     div.summary {
         position: absolute;
         top: 0px;
@@ -87,5 +108,13 @@
     }
     main {
         grid-template-columns: 1fr 1fr;
+    }
+    .mapouter {
+        height: 400px;
+        width: 250px;
+    }
+    .gmap_canvas {
+        height: 400px;
+        width: 250px;
     }
 }
