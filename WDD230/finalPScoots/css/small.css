@@ -45,6 +45,8 @@ div.logo section.slogan {
 }
 
 div.logo section.slogan h1 {
+    font-family: 'Bebas Neue', Tahoma, cursive;
+    color: #2b2d42;
     margin: .2rem .2rem 0 .2rem;
     font-size: 1rem;
     letter-spacing: .2rem;
@@ -88,7 +90,6 @@ div.logo section.slogan div {
     padding: .3rem;
 }
 
-h1,
 h2,
 h3 {
     margin-top: 3rem;
@@ -555,36 +556,13 @@ div.title p {
     transition: all 1s;
 }
 
-.navBtns {
-    width: 10px;
-    height: 10px;
-    border-radius: 30%;
-    border: none;
-    position: absolute;
-    opacity: 0.8;
-    background-color: transparent;
-    cursor: pointer;
-    color: white;
-}
-
-.navBtns:hover {
-    opacity: 1;
-    transition: all 1s;
-    background-color: #2b2d42;
-}
-
-#navLeft {
-    left: 5px;
-}
-
-#navRight {
-    right: 5px;
-}
-
-#linkTag {
-    cursor: pointer;
-    z-index: 1;
-    box-sizing: border-box;
+button.navBtns {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #8D99AE;
+    border: .5px solid #2B2D42;
+    font-size: .5rem;
+    border-radius: .4rem;
 }
 
 h2.tourPlan {

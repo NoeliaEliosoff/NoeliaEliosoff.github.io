@@ -1,6 +1,6 @@
 @media only screen and (min-width: 60em) {
     div.logo section.slogan h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     div.logo section.slogan div {
         font-size: .8rem;
@@ -90,17 +90,6 @@
     #rightView {
         height: 400px;
         width: 150px;
-    }
-    .navBtns {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    #navLeft {
-        left: 5px;
-    }
-    #navRight {
-        right: 5px;
     }
     div.title {
         margin-top: .2rem;
