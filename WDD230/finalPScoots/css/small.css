@@ -316,6 +316,10 @@ thead th {
     transform-style: preserve-3d;
 }
 
+.flip-card-back h2 {
+    color: #8D99AE;
+}
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
