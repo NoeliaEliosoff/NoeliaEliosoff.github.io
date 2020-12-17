@@ -27,6 +27,9 @@
     main {
         max-width: 1100px;
     }
+    nav button {
+        display: none;
+    }
     nav {
         width: 900px;
     }
@@ -68,12 +71,10 @@
         width: 25rem;
     }
     #container {
-        width: 100%;
-    }
-    #container {
         background: rgb(141, 153, 174);
         background: linear-gradient(90deg, rgba(141, 153, 174, 0.97) 1%, rgba(138, 139, 151, 0.97) 45%, rgba(43, 45, 66, 0.958420868347339) 82%);
         border-radius: 1rem;
+        width: 100%;
     }
     #galleryContainer {
         width: 900px;
