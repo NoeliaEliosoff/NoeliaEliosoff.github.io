@@ -1,6 +1,6 @@
 let imgObject = [
-    "images/galleryC1.jpg",
     "images/galleryC2.jpg",
+    "images/galleryC1.jpg",
     "images/galleryC3.jpg",
     "images/galleryC5.jpg",
     "images/galleryC9.jpg",
