@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@keyframes myBord {
+  50% {
+    border: solid #d8820f;
+  }
+}
+@keyframes moveIt {
+  50% {
+    transform-origin: 0 0 0;
+    transform: rotate(10deg);
+  }
+}
+@keyframes setup {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes dance {
+  0% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes grow {
+  0% {
+    display: none;
+  }
+  50% {
+    width: 4em;
+    height: 2em;
+  }
+  100% {
+    width: 9em;
+    height: 3em;
+  }
+}
+@keyframes scaleRot {
+  50% {
+    transform: rotate(360deg) scale(0);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes bord {
+  50% {
+    border-radius: 0 100%;
+  }
+  100% {
+    border-radius: 100% 0;
+  }
+}
+html {
+  margin: 0;
+  background-color: #190f02;
+}
+@media (min-width: 791px) {
+  html {
+    margin: 0.3em 3.5em;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+body p {
+  margin-top: 0;
+  text-align: center;
+}
+body h3 {
+  font-family: "Amita", cursive;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+li a {
+  color: #d8820f;
+}
+li a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #d8820f;
+}
+li a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #d8c40f;
+}
+li a:hover,
+li a :focus,
+li a :active {
+  text-decoration: underline;
+  color: #bf0707;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+/* specific divs */
+.page-wrapper {
+  display: grid;
+}
+@media (min-width: 791px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-gap: 0.5em;
+  }
+}
+
+@media (min-width: 791px) {
+  .intro {
+    grid-column: 1/2;
+  }
+}
+.intro header {
+  background-image: url("../img/castle.jpg");
+  background-color: #d8820f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  height: 25em;
+}
+.intro header h1 {
+  animation: grow 3s 4s cubic-bezier(0, 0.8, 0.5, 1.5) forwards;
+  background-color: rgba(191, 7, 7, 0.7);
+  color: #ffffff;
+  margin-top: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Amita", cursive;
+}
+.intro header h2 {
+  color: #ffffff;
+  background-color: rgba(191, 7, 7, 0.7);
+  width: 12em;
+  margin: 1em auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.summary {
+  background-image: url("../img/train.jpg");
+  background-color: #d8820f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: 1em auto;
+  height: 20em;
+}
+
+.summary p {
+  transform: rotate(0deg);
+  animation: moveIt 10s 15s ease-out;
+  font-family: "Open Sans", sans-serif;
+  background-color: #bf070793;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 1em;
+  padding: 0.5em;
+}
+@media (min-width: 1300px) {
+  .summary p {
+    margin-bottom: 0;
+    margin-left: 25em;
+    max-width: 15em;
+  }
+}
+
+.preamble {
+  background-image: url("../img/lightningBackSm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+  padding: 2em;
+  line-height: 1.65em;
+  margin-bottom: 0.5em;
+  border: 0.5em #bf0707 solid;
+  border-radius: 0.09em;
+}
+@media (min-width: 791px) {
+  .preamble {
+    background-image: url("../img/lightningBack.jpg");
+  }
+}
+.preamble:hover {
+  animation: bord 4s ease-in-out;
+}
+.preamble h3 {
+  color: #bf0707;
+  font-size: 1.5em;
+}
+@media (min-width: 1300px) {
+  .preamble h3 {
+    font-size: 2em;
+    margin-bottom: 1.2em;
+  }
+}
+.preamble p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+}
+@media (min-width: 791px) {
+  .preamble p {
+    line-height: 2em;
+  }
+}
+@media (min-width: 1300px) {
+  .preamble p {
+    font-size: 1.3em;
+    line-height: 2.2em;
+  }
+}
+
+.supporting {
+  margin-bottom: 40px;
+}
+@media (min-width: 791px) {
+  .supporting {
+    grid-column: 1/2;
+  }
+}
+.supporting .explanation {
+  padding: 1em;
+  background-color: #bf0707;
+  color: #ffffff;
+}
+@media (min-width: 791px) {
+  .supporting .explanation {
+    position: relative;
+    max-width: 45%;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 1.2em;
+  }
+}
+@media (min-width: 1300px) {
+  .supporting .explanation {
+    height: 60%;
+  }
+}
+.supporting .explanation::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50em;
+  margin: 0 auto;
+  background-image: url(../img/platform.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 791px) {
+  .supporting .explanation::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-position: top;
+  }
+}
+.supporting .participation {
+  margin-top: 0.5em;
+  padding: 1em;
+  background-color: #d8820f;
+  color: #ffffff;
+}
+.supporting .participation p {
+  background-color: rgba(25, 15, 2, 0.65);
+  padding: 0.5em;
+}
+@media (min-width: 791px) {
+  .supporting .participation {
+    background-image: url(../img/diagon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.supporting::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50em;
+  margin: 0 auto;
+  background-image: url(../img/diagon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 791px) {
+  .supporting::after {
+    display: none;
+  }
+}
+
+.benefits {
+  margin-top: 0.5em;
+  padding: 1em;
+  background-color: #bf0707;
+  color: #ffffff;
+}
+.benefits:hover {
+  animation: setup 3s ease-out, dance 5s ease-out;
+}
+
+.requirements {
+  border: 0.5em #bf0707 solid;
+  border-radius: 0.09em;
+  margin-top: 0.5em;
+  padding: 1.5em;
+  background-color: #f09b2a;
+  color: #ffffff;
+}
+.requirements:hover {
+  animation: myBord 10s ease-out;
+}
+
+footer {
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 1em;
+  background-color: #d8820f;
+  color: #ffffff;
+}
+
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+@media (min-width: 791px) {
+  .sidebar {
+    grid-column: 2/3;
+    grid-row: -1/4;
+  }
+}
+
+.wrapper {
+  font-family: "Open Sans", sans-serif;
+  padding: 1em;
+  background-color: rgba(25, 15, 2, 0.2);
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+}
+
+.sidebar h3 {
+  color: #d8820f;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: 1.4em;
+  margin-top: 0.3em;
+}
+.sidebar h3 .select {
+  margin: 10px 0 5px 0;
+  width: 97px;
+  height: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar h3 .archives {
+  margin: 25px 0 5px 0;
+  width: 57px;
+  height: 14px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar h3 .resources {
+  margin: 25px 0 5px 0;
+  width: 63px;
+  height: 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar ul li {
+  display: inline-grid;
+  padding: 3.5em;
+  margin: 1em 0;
+  background-image: url(../img/shield.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #190f02;
+  background-image: url(../img/shield.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: contain;
+}
+@media (min-width: 791px) {
+  .sidebar ul li {
+    display: block;
+  }
+}
+.sidebar ul li:hover {
+  animation: scaleRot 3s cubic-bezier(0.39, 0.15, 0.35, 0.7);
+}
+.sidebar ul li a {
+  font-size: 0.6em;
+}
+.sidebar ul li a:link {
+  color: #190f02;
+}
+.sidebar ul li a:visited {
+  color: #e6e6e6;
+}
+
+/*# sourceMappingURL=style.css.map */

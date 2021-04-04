@@ -1,0 +1,349 @@
+@import 'keyframes';
+@import 'variables';
+@import 'mixins';
+html {
+    margin: 0;
+    background-color: $color-3;
+    @include medium {
+        margin: .3em 3.5em;
+    }
+}
+
+body {
+    font-family: $secondary-font;
+    color: $color-5;
+    margin: 0;
+    padding: 0;
+    p {
+        margin-top: 0;
+        text-align: center;
+    }
+    h3 {
+        font-family: $primary-font;
+        letter-spacing: .1em;
+        text-align: center;
+        margin-bottom: .5em;
+        margin-top: 0;
+        color: $color-5;
+        font-size: 2em;
+    }
+}
+
+li a {
+    color: $color-2;
+    &:link {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-2;
+    }
+    &:visited {
+        font-weight: bold;
+        text-decoration: none;
+        color: $success;
+    }
+    &:hover,
+     :focus,
+     :active {
+        text-decoration: underline;
+        color: $color-1;
+    }
+}
+
+abbr {
+    border-bottom: none;
+}
+
+
+/* specific divs */
+
+.page-wrapper {
+    display: grid;
+    @include medium {
+        display: grid;
+        grid-template-columns: 3fr .5fr;
+        grid-gap: .5em;
+    }
+}
+
+.intro {
+    @include medium {
+        grid-column: 1 / 2;
+    }
+    header {
+        background-image: url("../img/castle.jpg");
+        background-color: $color-2;
+        @include backgroundIm;
+        padding-top: 20px;
+        height: 25em;
+        h1 {
+            animation: grow 3s 4s cubic-bezier(0, .8, .5, 1.5) forwards;
+            background-color: rgba($color-1, .7);
+            color: $color-5;
+            margin-top: 10px;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 1em auto;
+            text-align: center;
+            font-size: 3em;
+            font-family: $primary-font;
+        }
+        h2 {
+            color: $color-5;
+            background-color: rgba($color-1, .7);
+            width: 12em;
+            margin: 1em auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            font-family: $secondary-font;
+        }
+    }
+}
+
+.summary {
+    background-image: url("../img/train.jpg");
+    background-color: $color-2;
+    @include backgroundIm;
+    display: block;
+    margin: 1em auto;
+    height: 20em;
+}
+
+.summary {
+    p {
+        transform: rotate(0deg);
+        animation: moveIt 10s 15s ease-out;
+        font-family: $secondary-font;
+        background-color: #bf070793;
+        color: $color-5;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0 1em;
+        padding: .5em;
+        @include large {
+            margin-bottom: 0;
+            margin-left: 25em;
+            max-width: 15em;
+        }
+    }
+}
+
+.preamble {
+    background-image: url("../img/lightningBackSm.jpg");
+    @include backgroundIm;
+    @include medium {
+        background-image: url("../img/lightningBack.jpg");
+    }
+    height: 30em;
+    padding: 2em;
+    line-height: 1.65em;
+    margin-bottom: .5em;
+    border: .5em $color-1 solid;
+    border-radius: .09em;
+    &:hover {
+        animation: bord 4s ease-in-out;
+    }
+    h3 {
+        color: $color-1;
+        font-size: 1.5em;
+        @include large {
+            font-size: 2em;
+            margin-bottom: 1.2em;
+        }
+    }
+    p {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1em;
+        @include medium {
+            line-height: 2em;
+        }
+        @include large {
+            font-size: 1.3em;
+            line-height: 2.2em;
+        }
+    }
+}
+
+.supporting {
+    margin-bottom: 40px;
+    @include medium {
+        grid-column: 1 / 2;
+    }
+    .explanation {
+        padding: 1em;
+        background-color: $color-1;
+        color: $color-5;
+        @include medium {
+            position: relative;
+            max-width: 45%;
+            font-size: 1em;
+            line-height: 2em;
+            padding: 1.2em;
+        }
+        @include large {
+            height: 60%;
+        }
+        &::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 50em;
+            margin: 0 auto;
+            background-image: url(../img/platform.jpg);
+            @include backgroundIm;
+            @include medium {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+                background-position: top;
+            }
+        }
+    }
+    .participation {
+        margin-top: .5em;
+        padding: 1em;
+        background-color: $color-2;
+        color: $color-5;
+        p {
+            background-color: rgba($color-3, .65);
+            padding: .5em;
+        }
+        @include medium {
+            background-image: url(../img/diagon.jpg);
+            @include backgroundIm;
+        }
+    }
+    &::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 50em;
+        margin: 0 auto;
+        background-image: url(../img/diagon.jpg);
+        @include backgroundIm;
+        @include medium {
+            display: none;
+        }
+    }
+}
+
+.benefits {
+    margin-top: .5em;
+    padding: 1em;
+    background-color: $color-1;
+    color: $color-5;
+    &:hover {
+        animation: setup 3s ease-out, dance 5s ease-out;
+    }
+}
+
+.requirements {
+    &:hover {
+        animation: myBord 10s ease-out;
+    }
+    border: .5em $color-1 solid;
+    border-radius: .09em;
+    margin-top: .5em;
+    padding: 1.5em;
+    background-color: lighten($color: $color-2,
+    $amount: 10%);
+    color: $color-5;
+}
+
+footer {
+    text-align: center;
+    margin-top: .5em;
+    padding: 1em;
+    background-color: $color-2;
+    color: $color-5;
+}
+
+footer a:link,
+footer a:visited {
+    margin-right: 20px;
+}
+
+.sidebar {
+    @include medium {
+        grid-column: 2 / 3;
+        grid-row: -1 / 4;
+    }
+}
+
+.wrapper {
+    font-family: $secondary-font;
+    padding: 1em;
+    background-color: rgba($color-3, .2);
+    border-radius: .5em;
+    margin-left: .5em;
+}
+
+.sidebar h3 {
+    color: $color-2;
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 1.4em;
+    margin-top: .3em;
+    .select {
+        margin: 10px 0 5px 0;
+        width: 97px;
+        height: 16px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .archives {
+        margin: 25px 0 5px 0;
+        width: 57px;
+        height: 14px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .resources {
+        margin: 25px 0 5px 0;
+        width: 63px;
+        height: 10px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-grid;
+        @include medium {
+            display: block;
+        }
+        padding: 3.5em;
+        margin: 1em 0;
+        background-image: url(../img/shield.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: $color-3;
+        background-image: url(../img/shield.svg);
+        @include backgroundIm;
+        background-size: contain;
+        &:hover {
+            animation: scaleRot 3s cubic-bezier(.39, .15, .35, .7);
+        }
+        a {
+            font-size: .6em;
+            &:link {
+                color: $color-3;
+            }
+            &:visited {
+                color: $color-4;
+            }
+        }
+    }
+}

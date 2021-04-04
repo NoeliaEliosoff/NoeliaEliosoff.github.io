@@ -1,0 +1,71 @@
+@import 'variables';
+@keyframes myBord {
+    50% {
+        border: solid $color-2;
+    }
+}
+
+@keyframes moveIt {
+    50% {
+        transform-origin: 0 0 0;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes setup {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+        transform: none;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(20deg);
+    }
+}
+
+@keyframes dance {
+    0% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: rotateZ(-20deg);
+    }
+    100% {
+        transform: rotateZ(20deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        display: none;
+    }
+    50% {
+        width: 4em;
+        height: 2em;
+    }
+    100% {
+        width: 9em;
+        height: 3em;
+    }
+}
+
+@keyframes scaleRot {
+    50% {
+        transform: rotate(360deg) scale(0);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes bord {
+    50% {
+        border-radius: 0 100%;
+    }
+    100% {
+        border-radius: 100% 0;
+    }
+}

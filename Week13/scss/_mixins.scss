@@ -1,0 +1,28 @@
+//breakpoint sizes
+$break-small: 790px;
+$break-medium: 791px;
+$break-large: 1300px;
+//mixins
+@mixin small {
+    @media (max-width: $break-small) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: $break-medium) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: $break-large) {
+        @content;
+    }
+}
+
+@mixin backgroundIm {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
